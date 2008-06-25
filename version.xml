@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/P
+ropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>Product</key>
+        <string>CronniX</string>
+		<key>Version</key>
+		<string>3.0b1</string>
+		<key>Changes</key>
+		<array>
+			<string>New crontab parsing: preserving unknown/unparsable content</string>
+			<string>Drag and drop of tasks and environment variables (within CronniX and cross applications</string>
+		</array>
+</dict>
+</plist>

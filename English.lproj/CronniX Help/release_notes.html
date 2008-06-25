@@ -1,0 +1,61 @@
+<HTML>
+<head>
+<title> CronniX 3 Release Notes</title>
+</head>
+<body>
+
+<h2>CronniX 3.0 Release Notes</h2>
+
+		<P ALIGN=RIGHT><FONT
+		COLOR=#ff0000><FONT SIZE=2>Oktober 6, 2004</FONT></FONT></P>
+
+<p>Version 3.0 is a major update with the following changes</p>
+
+		<ul>
+			<li>New crontab parsing: preserving unknown/unparsable content</li>
+			<li>Drag and drop of tasks and environment variables (within CronniX and cross applications)</li>
+		</ul>
+
+<h2>CronniX Help</h2>
+
+<p>The CronniX documentation is available from the Help menu in the application as well as on the CronniX website:</p>
+
+<p><a href="http://www.abstracture.de/cronnix/docs/index.html" target="_page">CronniX Help on the web</a>
+
+<h2>Known Problems</h2>
+
+<ul>
+<li>Large crontabs: There's been a case where CronniX failed to save a very large (141 lines, 13 kB) crontab. I believe to know the cause of this, but fixing it will take some time. In the meantime, try to group entries by making intervals like '*/5' instead of having 12 entries for a minute of 0,5,10,... (as was the case in the problematic crontab) if possible. Reducing the crontab to a size below 8192 bytes (typically some 80-90 lines) will allow CronniX to read and write your crontab again. Sorry for the inconvenience. (See the FAQ for hints on how to save, view or remove your crontab from the command line.)</li>
+<li>If you open another user's crontab, be aware that the "Run Now" command will not execute the command as that user. They will always run as the current user. Therefore running the maintenance tasks in the system crontab as a regular user (even an administrator) will not do anything (not even harm :-) right now.</li>
+</ul>
+
+<h2>Support Development</h2>
+
+<p>CronniX is free and remains free. You can support its future development by making a credit card / PayPal donation. Please see</p>
+
+<a href="http://www.abstracture.de/cronnix/donate.html" target="_page">
+http://www.abstracture.de/cronnix/donate.html</a>
+
+<p>for details. I'd appreciate it a lot if you'd have a look.</p>
+
+<h2>Localization</h2>
+
+Please head to the <a href="localization.html" target="_right">localization section</a> if you want to translate CronniX to your language.
+
+<h2>Outlook / Next Version</h2>
+
+<p>Here's what I have planned for a future release:
+
+<UL>
+    <li>Preferences
+	<li>"Run Now" improvement (sudo for other users, better error reporting)
+    <li>Perform sanity checks before installing a crontab
+    <li>React to future user suggestions
+</UL>
+
+
+<hr>
+<a href="welcome.html" target="_right">Home</a>
+
+</BODY>
+</HTML>

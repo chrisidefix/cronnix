@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancelPressed = id; defaultPressed = id; loadPressed = id; }; 
+            CLASS = loadCrontabController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {btCancel = id; btLoad = id; edUser = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

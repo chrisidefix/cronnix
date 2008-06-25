@@ -1,0 +1,70 @@
+<HTML>
+<head>
+<title>Crontab syntax</title>
+</head>
+<body>
+
+<h2>Crontab syntax</h2>
+
+<p>Een crontabtaak bestaat uit vier datum/tijd velden en een opdrachtveld. Elke minuut controleert <em>cron</em> alle crontabs of de huidige datum/tijd overeenkomt met die van de taken. Als deze gelijk zijn, wordt de opdracht in de desbetreffende taak uitgevoerd. De systeemcrontab heeft een extra "Gebruikers"-veld dat cron vertelt met welke gebruikersidentiteit de opdracht moet worden uitgevoerd.</p>
+
+<p>De velden zijn:</p>
+<TABLE>
+    <TR>
+        <TD width=80 valign=top>Min</TD>
+        <TD>minuut van uitvoering: 0-59</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Uur</TD>
+        <TD>uur van uitvoering: 0-23</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Mdag</TD>
+        <TD>dag van maand van uitvoering: 1-31</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Maand</TD>
+        <TD>maand van uitvoering: 1-12 (of namen)</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Wdag</TD>
+        <TD>dag van week van uitvoering: 0-7 (0 of 7 is zondag, of namen)</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Opdracht</TD>
+        <TD>Alles wat vanaf een opdrachtregel (prompt) gestart kan worden</TD>
+    </TR>
+</TABLE>
+<P></P>Mogelijke waarden:<BR>
+<TABLE>
+    <TR>
+        <TD width=40 valign=top>*</TD>
+        <TD>gelijk aan alle waarden, bijv. een * in maand betekent: &quot;alle maanden&quot;</TD>
+    </TR>
+    <TR>
+        <TD valign=top>x-y</TD>
+        <TD>gelijk aan het bereik x t/m y, bijv. 2-4 in Mdag betekent &quot;op de 2e, 3e, en 4e van de maand&quot;</TD>
+    </TR>
+    <TR>
+        <TD valign=top>x/n</TD>
+        <TD>in bereik x met herhaling n, bijv. */2 in Uur betekent &quot;elke twee uur&quot;</TD>
+    </TR>
+</TABLE>
+
+<P>Maand accepteert ook namen, bijv. jan, Feb (maakt geen onderscheid tussen hoofdletters en kleine letters). Je kunt nu echter geen bereik opgeven.
+
+<p>Weekdagen kunnen ook als naam ingevoerd worden, bijv zon, Maa.</P>
+
+<p>Er zijn verscheidene speciale schema-shortcuts die CronniX nog niet ondersteunt, zoals @yearly, @daily, etc (zie 'man 5 crontab' voor details). Op een na zijn dit allemaal shortcuts. Bijvoorbeeld @daily betekent '0 0 * * *'. De 'tag' die verschilt is @reboot.
+
+<p>Ik heb niet bevestigd dat deze tags (speciaal @reboot) functioneren, noch dat ze door de huidige versie van CronniX ondersteund worden. Wellicht verandert dit in de toekomst. Het is voornamelijk een probleem hoe ik ze in het tabelvenster moet weergeven.
+
+<p>Ik overweeg om enkel conversies uit te voeren tussen shortcuts (en hun betekenis) en de lange versie te gebruiken voor het schrijven van een crontab. Dit heeft tot gevolg dat shortcuts geconverteerd worden als ze door CronniX worden verwerkt. De "Interval"-tab in de "Wijzig"-dialoog (als deze gebruiksklaar is) stelt je in staat om een van deze schema's te selecteren, dus de mogelijkheid blijft aanwezig.
+
+<p>De @reboot past niet in dit rijtje en, behalve een extra venster of het uitbreiden van het bestaande tabelvenster, weet ik nog niet hoe ik dit in CronniX ga verwerken.
+
+<hr>
+<a href="welcome.html" target=_right>Home</a>
+
+</BODY>
+</HTML>

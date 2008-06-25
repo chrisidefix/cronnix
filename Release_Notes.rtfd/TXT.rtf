@@ -1,0 +1,113 @@
+{\rtf1\mac\ansicpg10000\cocoartf102
+{\fonttbl\f0\fnil\fcharset77 LucidaGrande-Bold;\f1\fnil\fcharset77 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red0\green0\blue255;}
+\vieww12420\viewh15000\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b\fs36 \cf0 CronniX 3.0 Release Notes \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qr
+
+\f1\b0\fs20 \cf2 October 6, 2004 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+
+\fs24 Version 3.0 is a major update with the following changes:\
+\
+\pard\tx560\tx780\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li760\fi-760\ql\qnatural
+\cf0 	\'a5 New crontab parsing: preserving unknown/unparsable content \
+	\'a5 Drag and drop of tasks and environment variables (within CronniX and cross applications \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b\fs36 \cf0 CronniX Help \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\b0\fs24 \cf0 The CronniX documentation is available from the Help menu in the application as well as on the CronniX website: \
+\
+\pard\tx480\tx960\tx1440\tx1920\tx2400\tx2880\tx3360\tx3840\tx4320\tx4800\tx5280\tx5760\tx6240\tx6720\tx7200\tx7680\tx8160\tx8640\tx9120\tx9600\tx10080\tx10560\tx11040\tx11520\tx12000\tx12480\tx12960\tx13440\tx13920\tx14400\tx14880\tx15360\tx15840\tx16320\tx16800\tx17280\tx17760\tx18240\tx18720\tx19200\tx19680\tx20160\tx20640\tx21120\tx21600\tx22080\tx22560\tx23040\tx23520\tx24000\tx24480\tx24960\tx25440\tx25920\tx26400\tx26880\tx27360\tx27840\tx28320\tx28800\tx29280\tx29760\tx30240\tx30720\tx31200\tx31680\tx32160\tx32640\tx33120\tx33600\tx34080\tx34560\tx35040\tx35520\tx36000\tx36480\tx36960\tx37440\tx37920\tx38400\tx38880\tx39360\tx39840\tx40320\tx40800\tx41280\tx41760\tx42240\tx42720\tx43200\tx43680\tx44160\tx44640\tx45120\tx45600\tx46080\tx46560\tx47040\tx47520\tx48000\li480\fi-480\ql\qnatural
+\cf3 http://www.abstracture.de/cronnix/docs/index.html \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b\fs36 \cf0 Known Problems \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li780\fi-780\ql\qnatural
+
+\f1\b0\fs24 \cf0 	\'a5 Large crontabs: There's been a case where CronniX failed to save a very large (141 lines, 13 kB) crontab. I believe to know the cause of this, but fixing it will take some time. In the meantime, try to group entries by making intervals like '*/5' instead of having 12 entries for a minute of 0,5,10,... (as was the case in the problematic crontab) if possible. Reducing the crontab to a size below 8192 bytes (typically some 80-90 lines) will allow CronniX to read and write your crontab again. Sorry for the inconvenience. (See the FAQ for hints on how to save, view or remove your crontab from the command line.)\
+	\
+	\'a5 If you open another user's crontab, be aware that the "Run Now" command will not execute the command as that user. They will always run as the current user. Therefore running the maintenance tasks in the system crontab as a regular user (even an administrator) will not do anything (not even harm :-) right now.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b\fs36 \cf0 Support Development\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\b0\fs24 \cf0 \
+CronniX is free and remains free. You can support its future development by making a credit card (via Kagi) or PayPal donation. Please see\
+\
+\pard\tx480\tx960\tx1440\tx1920\tx2400\tx2880\tx3360\tx3840\tx4320\tx4800\tx5280\tx5760\tx6240\tx6720\tx7200\tx7680\tx8160\tx8640\tx9120\tx9600\tx10080\tx10560\tx11040\tx11520\tx12000\tx12480\tx12960\tx13440\tx13920\tx14400\tx14880\tx15360\tx15840\tx16320\tx16800\tx17280\tx17760\tx18240\tx18720\tx19200\tx19680\tx20160\tx20640\tx21120\tx21600\tx22080\tx22560\tx23040\tx23520\tx24000\tx24480\tx24960\tx25440\tx25920\tx26400\tx26880\tx27360\tx27840\tx28320\tx28800\tx29280\tx29760\tx30240\tx30720\tx31200\tx31680\tx32160\tx32640\tx33120\tx33600\tx34080\tx34560\tx35040\tx35520\tx36000\tx36480\tx36960\tx37440\tx37920\tx38400\tx38880\tx39360\tx39840\tx40320\tx40800\tx41280\tx41760\tx42240\tx42720\tx43200\tx43680\tx44160\tx44640\tx45120\tx45600\tx46080\tx46560\tx47040\tx47520\tx48000\li480\fi-480\ql\qnatural
+\cf3 http://www.abstracture.de/cronnix/donate.html \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+for details. I'd appreciate it a lot if you'd have a look.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b\fs36 \cf0 Localization \
+\
+\pard\tx480\tx960\tx1440\tx1920\tx2400\tx2880\tx3360\tx3840\tx4320\tx4800\tx5280\tx5760\tx6240\tx6720\tx7200\tx7680\tx8160\tx8640\tx9120\tx9600\tx10080\tx10560\tx11040\tx11520\tx12000\tx12480\tx12960\tx13440\tx13920\tx14400\tx14880\tx15360\tx15840\tx16320\tx16800\tx17280\tx17760\tx18240\tx18720\tx19200\tx19680\tx20160\tx20640\tx21120\tx21600\tx22080\tx22560\tx23040\tx23520\tx24000\tx24480\tx24960\tx25440\tx25920\tx26400\tx26880\tx27360\tx27840\tx28320\tx28800\tx29280\tx29760\tx30240\tx30720\tx31200\tx31680\tx32160\tx32640\tx33120\tx33600\tx34080\tx34560\tx35040\tx35520\tx36000\tx36480\tx36960\tx37440\tx37920\tx38400\tx38880\tx39360\tx39840\tx40320\tx40800\tx41280\tx41760\tx42240\tx42720\tx43200\tx43680\tx44160\tx44640\tx45120\tx45600\tx46080\tx46560\tx47040\tx47520\tx48000\ql\qnatural
+
+\f1\b0\fs24 \cf0 \CocoaLigature0 Thanks for all the offers to localize CronniX. As you'll notice, at this time CronniX only includes English localization. I will always start by releasing an English version first and then putting the additional language packs on the webpage for separate download.\CocoaLigature1  \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+Please contact me before you start any localization of CronniX. There might often already be a translation (or parts of one) that's just not included in CronniX yet. \
+\
+The following languages are forseen for CronniX 3: \
+\
+	\'a5 Flemish \
+	\'a5 French \
+	\'a5 German \
+	\'a5 Italian \
+	\'a5 Japanese \
+	\'a5 Korean \
+	\'a5 Portuguese \
+	\'a5 Spanish \
+	\'a5 Swedish \
+	\'a5 Welsh \
+\
+I'm looking forward to seeing CronniX run in all of those languages. Please don't hesitate to contact me even though your language is already on the list. \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b\fs36 \cf0 Outlook / Next Version \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\b0\fs24 \cf0 Here's what I have planned for a future release: \
+\
+	\'a5 Preferences \
+	\'a5 "Run Now" improvement (sudo for other users, better error reporting) \
+	\'a5 Perform sanity checks before installing a crontab \
+	\'a5 React to future user suggestions \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b\fs36 \cf0 Contact \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1\b0\fs24 \cf0 I'm always grateful for feedback about this project. Suggestions, complaints, whatever. Here's my address: \
+\
+	\cf3 sas@abstracture.de\
+\cf0 \
+The CronniX homepage is located at:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf3 	http://www. abstracture.de/cronnix\
+\
+\
+}

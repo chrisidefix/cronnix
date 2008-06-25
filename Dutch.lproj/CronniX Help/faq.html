@@ -1,0 +1,126 @@
+<HTML>
+<head>
+<title> Veel gestelde vragen en handige tips </title>
+</head>
+<body>
+
+<h2>Veel gestelde vragen en handige tips</h2>
+
+<p><i><b>Is CronniX verkrijgbaar als open source?</b></i></p>
+
+Ja. Met ingang van versie 1.5 is CronniX verkrijgbaar als open source. Ik krijg het misschien niet altijd voor elkaar om de meest recente versie onmiddellijk als open source beschikbaar te stellen, maar ik doe m'n best.
+
+<hr>
+
+
+
+<p><i><b>Wat heb ik nodig om cron te starten?</b></i>
+
+<p>Cron is een systeemproces dat al op de achtergrond draait. Alles wat je moet doen, is het bewaren van je opdrachten in een crontab. Cron controleert deze bestanden elke minuut en voert de betreffende taken dan uit.
+
+
+<hr>
+
+
+<p><i><b>Hoe weet ik of mijn crontab goed werkt?</b></i><br>
+
+<p>Het kan lastig zijn om een crontab te maken, omdat het regelmatig voor komt dat een script het prima doet vanaf de opdrachtregel (prompt), maar niet functioneert in cron. Dit is te wijten aan het verschil in 'runtime environment'. Het is dus erg handig dat cron zijn resultaten via e-mail naar de crontabgebruiker zend.
+
+
+
+<p><i><FONT
+		COLOR=#ff0000>Het volgende heeft betrekking op OSX 10.1 en eerder. Zie hier onder voor Jaguar-instructies.</font></i>
+
+<p>Om lokale post te ontvangen moet je een speciale  mail account maken in Mail.app. De volgende tip komt van <a href=http://www.macosxhints.com>www.macosxhints.com</a>:
+
+<p>"An easier way"<br>
+Geschreven door: frjo op din 8 mei om 11:05 am.
+<ul>
+<li>Start Mail en maak een Unix-mailaccount met je gebruikersnaam, als die nog niet bestaat.
+<li>Klik op "Postbus", kies "Persoonlijke Postbus" uit de lijst, en selecteer dan het menu-onderdeel "Postbus/Nieuwe Postbus...". Noem de nieuwe postbus "Active". Stop en herstart Mail.
+<li>Alle lokal post die naar jou wordt verzonden, moet nu terecht komen in de "Active" postbus. Ik kreeg deze tip van een doorgewinterde NeXTSTEP-gebruiker.
+</ul>
+
+<p>Je hoeft sendmail niet te activeren om lokale post te bezorgen, zodat dit eigenlijk alles is wat je moet doen om lokale post (en dus cron's post) te krijgen. Nu je toch bezig bent, kun je ook root's post naar je eigen account laten doorsturen. Maak een bestand ".forward", zet hier je korte gebruikersnaam in en plaats het bestand in root's thuismap "/private/var/root".
+
+
+
+
+<p><i><FONT
+		COLOR=#ff0000>Het volgende heeft betrekking op OSX 10.2 (Jaguar).</font></i>
+
+<p>Het 'Unix mail'-accounttype is niet meer aanwezig in Mail.app's accountopties in Jaguar.
+
+<p>Hoe kunnen we weer lokale post ontvangen:
+
+<ul>
+<li> Stop Mail.app (veiligheidsmaatregel)
+
+<li> Typ "sudo chmod 1777 /var/mail" in de terminal<br>
+	Mail.app heeft dit nodig om de daar aanwezige mailbox-bestanden te kunnen lezen
+
+<li> cd ~/Library/Mail/Mailboxes/INBOX.mbox
+
+<li> mv mbox mbox.bak
+
+<li> Maak een symbolische link naar je mailbox in /var/mail. De naam van deze mailbox is hetzelfde als je korte gebruikersnaam (en bestaat wellicht niet als je nog helemaal geen post hebt ontvangen). Mijn gebruikersnaam is 'sas', dus doe ik het volgende:<br>
+	ln -s /var/mail/sas mbox<br>
+	Nu wordt er een link 'mbox' gemaakt, die wijst naar mijn mailbox-bestand in /var/mail (waar sendmail de lokale post heenstuurt)
+</ul>
+
+Test:
+<ul>
+
+<li>Zorg er voor dat sendmail actief is:
+	<ul>
+    <li> Set MAILSERVER=-YES- in /etc/hostconfig
+    <li> Typ "sudo chmod g-w /" in de terminal om sendmail tevreden te houden
+    <li> Typ "sudo SystemStarter start SMTP" in de terminal<br>
+   (Voorheen werd lokale post bezorgd zonder dat sendmail actief hoefde te zijn, maar dit is in Jaguar veranderd)
+	</ul>
+<li> Verzend de lokale post.:<br>
+	echo test | mail -s Testmail sas<br>
+   (vervang 'sas' door je eigen gebruikersnaam)
+<li>Controleer de folder 'On My Mac' in Mail.app's Inbox om te zien of het goed werkt
+
+</ul>
+
+Let wel:
+
+<p>Op deze manier post lezen werkt. En het blijft werken <b>tenzij</b> je post verwijdert uit je lokale inbox. Als je dat doet, vervangt Mail de link naar /var/mail/<username> door een normaal mbox-bestand. Je moet de link weer herstellen om je lokale post weer te kunnen lezen.
+
+<p>Bestaat er een crontaak die een script lanceert die controleert of 'mbox' nog steeds een link is of weer opnieuw gelinkt moet worden... :-)?
+
+
+<hr>
+
+<p><i><b>Hoe weet ik of een taak op de juiste tijd uitgevoerd wordt?</b></i>
+
+<p>Of: je maakt een mailaccount zoals hier boven beschreven en laat je script/programma een paar regels schrijven. Of: je test het door het laten veranderen van een testbestand door je script: "touch /tmp/crontest". Je kunt nadien naar het datum/tijdstempel kijken om te controleren of de taak op de juiste tijd werd uitgevoerd.</p>
+<p>Een snelle test kun je doen door een programma als TextEdit naar het hoofdvenster van CronniX te slepen. Zet de starttijd een minuut vooruit en wacht tot TextEdit weer te voorschijn komt.</p>
+
+<hr>
+
+<p><i><b>M'n crontab is naar z'n malle moer en CronniX kan 'em niet meer lezen. Wat te doen?</b></i>
+
+<p>Gebruik het volgende commando in de terminal om je crontab te bekijken:<br>
+crontab -l<br>
+(Dat is een kleine letter el, niet het getal een (1))
+
+<p>Als je je crontab wilt verwijderen om weer bij het begin te beginnen:<br>
+crontab -r
+
+<p>Als je je crontab in een bestand wilt bewaren dat je met een tekstverwerker kunt bewerken:<br>
+crontab -l > ~/my_crontab<br>
+Via deze 'pijplijn' komt je crontab in het bestand 'my_crontab' in je thuismap
+
+<p>Nadat je je tekstverwerker hebt losgelaten op 'my_crontab' (gebruik 'Platte tekst' als je TextEdit gebruikt, RTF-formaat is nog nooit cron's beste vriend geweest), kun je je crontab weer installeren:<br>
+crontab ~/my_crontab
+
+<p>Dit was cron in een notendop. Ik hoop dat al deze kennis CronniX niet overbodig heeft gemaakt.
+
+<hr>
+<a href="welcome.html" target=_right>Home</a>
+
+</BODY>
+</HTML>

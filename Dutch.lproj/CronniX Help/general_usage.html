@@ -1,0 +1,121 @@
+<HTML>
+<head>
+<title> Algemene handleiding </title>
+</head>
+<body>
+
+<h2>Algemene handleiding</h2>
+
+<p>De dienstregeling van het systeem - cron - is een Unixprogramma, dat automatisch wordt gestart als het systeem opstart. Elke minuut worden de zogeheten crontabs bekeken om te zien of er een taak moet worden uitgevoerd. Iedere gebruiker van het systeem en het systeem zelf kunnen <b>een (1)</b> crontab hebben. Via CronniX kun je al deze crontabs een voor een bewerken.</p>
+
+<p>Laten we eens kijken naar de gebruikersinterface van CronniX:</p>
+
+<a href="screenshot.html" target="_right"><IMG SRC=screenshot2.jpg ALT=screenshot></a>
+
+<h3>Hoofdvenster</h3>
+
+<p>Het bovenste venster is het hoofdvenster van CronniX. Het toont regel voor regel alle taken die deze crontab bevat. Het "Huidige crontab"-icoon in de knoppenbalk laat zien welke crontab wordt getoond. Als de knoppenbalk is verborgen, kun je deze informatie in de titel van het venster zien. Bij het opstarten van CronniX wordt de crontab van de huidige gebruiker ingelezen en weergegeven.</p>
+
+<p>Je kunt de knoppenbalk aan je eigen wensen aanpassen. De standaardset bevat de knoppen: Nieuw, Verwijder, Open, Bewaar, Huidige crontab, en Wijzig. Alle knoppen in de knoppenbalk, behalve 'Huidige crontab', hebben hun equivalent in het programmamenu. Dit is wat ze doen:</p>
+
+<table>
+
+<tr><td width=150 valign=top>
+<b>Nieuw (Cmd-N)</b></td>
+<td>Maak een nieuwe taak voor deze crontab met behulp van het "Nieuwe taak / Wijzig taak"-venster.</td></tr>
+
+<tr><td valign=top>
+<b>Verwijder</b></td> <td>Kan alleen worden gebruikt als er een taak is geselecteerd. Verwijdert de geselecteerde taak.</td></tr>
+
+<tr><td valign=top>
+<b>Open (Cmd-O)</b></td> 
+<td>Opent een andere crontab. Je hebt een (beheerders)wachtwoord nodig om toegang te krijgen tot de crontab van andere gebruikers. De systeemcrontab kan worden geopend (maar niet bewaard) zonder wachtwoord.</td></tr>
+
+<tr><td valign=top>
+<b>Bewaar (Cmd-S)</b></td>
+<td>Bewaart de huidige crontab. Deze crontab is nu onmiddellijk beschikbaar voor het systeem.</td></tr>
+
+<tr><td valign=top>
+<b>Huidige crontab</b></td> 
+<td>Laat zien welke crontab wordt weergegeven. Bij de systeemcrontab staat hier "system".</td></tr>
+
+<tr><td valign=top>
+<b>Wijzig</b></td> 
+<td>Opent het "Wijzig taak"-venster voor de geselecteerde taak.</td></tr>
+
+<tr><td valign=top>
+<b>Start taak</b></td> 
+<td>Voert de geselecteerde taak onmiddellijk uit.</td></tr>
+
+</table>
+
+<p>Onder de knoppenbalk vind je de lijst met taken van de huidige crontab. De crontabvelden kun je wijzigen door er op te dubbelklikken. Kijk op de helppagina <a href="crontab_syntax.html" target="_right">Crontab syntax</a> voor informatie over de velden van een crontabtaak. Via de checkbox voor de regels kun je een taak activeren of deactiveren.</p>
+
+<p>Er is een contextueel menu aanwezig voor taak-specifieke commando's. Klik met de rechter muisknop (Ctrl-klik voor een muis met een knop) op een taak om deze te selecteren en het contextuele menu weer te geven.</p>
+       
+<h3>Taakinformatie</h3>
+
+<p>In versie 2.0  is er, onder de takenlijst, een informatieveld toegevoegd waarin je een taak van commentaar kunt voorzien. De scheiding tussen dit informatieveld en de takenlijst kan versleept worden om de grootte van het informatieveld te veranderen. Als je op een taak klikt wordt de bijbehorende informatie (zoals ingevoerd door de gebruiker) in het informatieveld getoond. De tekst die je in het informatieveld typt (of wijzigt) wordt samen met de betreffende taak bewaard.
+
+<h3>Omgevingsvariabelen</h3>
+
+<p>Taken die door cron worden uitgevoerd, starten in een speciale omgeving die geen rekening houdt met aangepaste .cshrc of .login scripts (Als je niet het UNIXtype bent en niet weet waar ik het over heb, maak je dan geen zorgen). Als je de waarde van omgevingsvariabelen moet wijzigen, zoals bijv. MAIL, voor scripts die via cron worden gestart, moet je deze rechtstreeks in je crontab invoeren. Je doet dit door het omgevingsvariabelen-venster te activeren via het "Wijzig - Omg. variabelen" menu-onderwerp of de toetscombinatie Cmd-E.</p>
+
+<p>Het omgevingsvariabelen-venster lijkt in veel opzichten op het hoofdvenster. Het heeft z'n eigen knoppenbalk met twee knoppen:</p>
+
+<table>
+<tr><td width=100 valign=top><b>Nieuw (Cmd-N)</b></td> <td>Maakt een nieuwe waarde voor een omgevingsvariabele.</td></tr>
+<tr><td valign=top><b>Verwijder</b></td> <td>Alleen beschikbaar als er een variabele is geselecteerd. Verwijdert de geselecteerde variabele.</td></tr>
+</table>
+
+<p>Vanwege de consistentie (samenhang) van het programma kon ik de verleiding niet weerstaan om ook deze knoppenbalk aanpasbaar te maken. In de stijl van een oerdegelijk wiskundeboek: We laten het aan de gebruiker over om uit te vinden op hoeveel manieren je twee knoppen kunt rangschikken.
+
+<h3>Openen van crontabs van andere gebruikers</h3>
+
+<p>Je kunt de crontabs van andere gebruikers wijzigen door in het "Archief"-menu "Open voor gebruiker" te kiezen (toetscombinatie: Cmd-O). Als je een gebruikerscrontab wilt openen die niet van jezelf is, heb je hiervoor een beheerderswachtwoord nodig. CronniX zal je hierom vragen.</p>
+
+<p>Er is ook een systeemcrontab die het toestaat systeemtaken te regelen, en niets te maken heeft met de crontabs van gebruikers. Deze is <em>niet</em> hetzelfde als root's crontab. Je kunt deze systeemcrontab bekijken door "Open systeemcrontab" te kiezen uit het "Archief"-menu of door "system" op te geven als gebruikersnaam bij het openen van een crontab van een andere gebruiker. Je kunt de systeemcrontab weliswaar bekijken, maar om hem te bewaren heb je een beheerderswachtwoord nodig.</p>
+
+<h3><a name="drag_and_drop">Drag-and-drop / Opdrachten invoegen<a></h3>
+
+<p>CronniX ondersteunt drag-and-drop, wat erg handig kan zijn als je bijv. verscheidene AppleScripts aan je crontab wilt toevoegen. Sleep de bestanden vanuit je Finder en drop ze in je crontab.
+
+<p>Als je
+<ul>
+<li>een selectie op een lege regel dropt, worden er nieuwe crontabtaken voor aangemaakt
+<li>een selectie op een reeds ingevulde taakregel dropt, wordt de opdracht van deze taak vervangen door de selectie
+<li>meerdere bestanden op een taakregel dropt, wordt de opdracht van deze taak vervangen door het eerste bestand en worden er nieuwe taken aangemaakt voor de overige bestanden.
+</ul>
+
+<p>Drag-and-drop handelingen veranderen alleen het 'Opdracht'-veld van een taak . Nieuwe taken worden toegevoegd met het schema van de standaardtaak en het bestandsgedeelte in het 'Opdracht'-veld.
+
+<p>Bestanden die op deze manier aan een crontab worden toegevoegd krijgen automatisch als voorvoegsel "/usr/bin/open". Dit is nodig om applicaties vanaf de opdrachtregel (prompt) te kunnen starten. Applicaties in deze context zijn programma's die gewoonlijk via een GUI (Grafische Gebruikers Interface) worden gestart door ze in de Finder te dubbelklikken. Shellscripts zouden dit voorvoegsel niet moeten krijgen, maar er wordt ook van je verwacht dat je deze niet dragt-and-dropt. (Wellicht is dit in de toekomst wel mogelijk.)</p>
+
+<p>Je kunt het voorvoegsel "/usr/bin/open" gemakkelijk verwijderen door het "Wijzig taak"-venster te openen en de checkbox "Voorvoegsel  /usr/bin/open" te deactiveren.</p>
+
+<p>Drag-and-drop werkt ook met tekstselecties. Deze vervangen de opdracht als je ze op een bestaande taakregel dropt. Ze maken een nieuwe taak met de tekst als opdracht als je ze op een lege regel dropt.</p>
+
+<p>Het menu-equivalent voor drag-and-drop van bestanden is "Voeg opdracht in" in het "Wijzig"-menu (toetscombinatie Cmd-I). Je krijgt dan een bestands-dialoogvenster te zien waaruit je een of meerdere bestanden kunt kiezen die aan de crontab moeten worden toegevoegd (gebruik de Cmd of Shift toets om meerdere bestanden tegelijk te selecteren) .</p>
+
+<h3><a name="run_now">"Start taak"</a></h3>
+
+<p>Als je niet de hele nacht op wilt blijven om te zien hoe je om 3 uur 's nachts geplande crontaak het doet, bestaat er de mogelijkheid om een opdracht onmiddellijk uit te voeren. De opdracht wordt uitgevoerd in een shell (tcsh) en het resultaat wordt in een venster weergegeven.</p>
+
+<p>Ofschoon deze mogelijkheid erg handig is om een bepaalde taak te testen, is de tcsh-omgeving niet dezelfde als die van de cron-daemon. Soms kan tcsh bijv. een programma in het 'pad' hebben staan, terwijl de cron-daemon deze niet kan vinden. Als een taakopdracht echter in cron's omgeving wordt uitgevoerd, zullen er geen problemen zijn als je "Start taak" gebruikt.</p>
+
+<p>Dit geldt alleen voor taken in je eigen crontab. Momenteel gebruikt de "Start taak"-opdracht niet het 'sudo'-commando om een taak te starten in de crontab van een andere gebruiker. Dus, als je de systeemcrontab bekijkt, zal de "Start taak"-opdracht niet veel uithalen. Tenzij je CronniX start als 'root',  zul je geen bevoegdheid hebben om bijv. de onderhoudsscripts te starten. (Om het technisch helemaal correct te zeggen: je kunt de scripts wel starten, maar wat in de scripts staat, doet dingen waar een normale gebruiker geen permissie voor heeft, zodat uiteindelijk de uitvoering van de inhoud van de onderhoudsscripts zal mislukken.)
+
+<h3><a name="import_export">Importeren en exporteren van crontabs</h3>
+
+<p>Versie 2.1 brengt ons het importeren en exporteren van crontabs. Je kunt de corresponderende menu-onderwerpen vinden in het "Archief"-menu. CronniX bewaart en leest de bestanden. De standaard extensie voor crontabs is "crontab" (dat had je vast niet gedacht, he). De opdrachten zijn "veilig": CronniX vraagt je of je eventuele veranderingen wilt bewaren voordat het een crontab importeert.</p>
+
+<p>CronniX blijft voorlopig een programma waarin je een (1) crontab tegelijk kunt bewerken. Daarom is CronniX minder geschikt voor gegevensoverdracht tussen verschillende crontabbestanden. Omdat CronniX over een (1) venster beschikt zou het openen van een tweede crontab de inhoud van het huidige crontabvenster vervangen. Om van CronniX een multidocument-programma te maken, betekent voor mij voorlopig meer werk dan ik aan kan.</p>
+
+<p>Let wel, na het importeren/exporteren blijft de gewijzigde crontab in zijn originele context behouden. Hij blijft dus verbonden aan je gebruikerscrontab, systeemcrontab, etc... Het is dus geen kloon van het bestand dat je hebt ingelezen of bewaard, maar de nieuwe inhoud van de crontab die je aan het bewerken was. De veranderingen hebben geen effect totdat je de crontab weer opnieuw bewaart (= installeert).</p>
+
+
+<hr>
+<a href="welcome.html" target=_right>Home</a>
+
+</BODY>
+</HTML>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Add new environment variable</key>
+	<string>新規環境変数を追加します</string>
+	<key>Apply</key>
+	<string>適用</string>
+	<key>Bummer</key>
+	<string>やれやれ！</string>
+	<key>Cancel</key>
+	<string>キャンセル</string>
+	<key>Connection failure</key>
+	<string>接続失敗</string>
+	<key>Couldn't convert value</key>
+	<string>値を変換できませんでした</string>
+	<key>Create new crontab entry</key>
+	<string>新規 crontab エントリーを作成します</string>
+	<key>Crontab for user:</key>
+	<string>crontab のオーナー：</string>
+	<key>Current crontab</key>
+	<string>現在の crontab</string>
+	<key>Delete</key>
+	<string>削除</string>
+	<key>Discard</key>
+	<string>破棄</string>
+	<key>Edit</key>
+	<string>編集</string>
+	<key>Edit task</key>
+	<string>タスクを編集します</string>
+	<key>Empty Crontab</key>
+	<string>crontab が空です</string>
+	<key>Failure</key>
+	<string>失敗</string>
+	<key>Go to download page</key>
+	<string>ダウンロードページへ</string>
+	<key>Hide Toolbar</key>
+	<string>ツールバーを隠す</string>
+	<key>I couldn't find a home directory for '%@' on your system. Maybe you mistyped the name or (god no!) deleted the directory. Better have look...</key>
+	<string>システム上に '%s' のホームディレクトリが見つかりません。おそらく名前をタイプミスしたか、もしくは（まさか！）ディレクトリを削除してしまったのでしょう。ご確認を...</string>
+	<key>Insert</key>
+	<string>挿入</string>
+	<key>Insufficient privileges to write crontab for user "%s".</key>
+	<string>ユーザ‘%s’の crontab に書き込むアクセス権がありません。
+ほかのユーザの crontab に書き込めるのは“root”だけです。</string>
+	<key>Insufficient privileges to write crontab.</key>
+	<string>crontab に書き込むアクセス権がありません。</string>
+	<key>New</key>
+	<string>新規</string>
+	<key>No Update Available</key>
+	<string>アップデートはありません</string>
+	<key>Open</key>
+	<string>開く</string>
+	<key>Open crontab for different user</key>
+	<string>ほかのユーザの crontab を開きます</string>
+	<key>Remove crontab entry</key>
+	<string>crontab エントリーを削除します</string>
+	<key>Remove environment variable</key>
+	<string>環境変数を削除します</string>
+	<key>Run Now</key>
+	<string>今すぐ実行</string>
+	<key>Run now</key>
+	<string>今すぐ実行</string>
+	<key>Run task now</key>
+	<string>タスクを今すぐ実行</string>
+	<key>Running command
+</key>
+	<string>コマンドを実行しています
+</string>
+	<key>Save</key>
+	<string>保存</string>
+	<key>Save crontab</key>
+	<string>crontab を保存します</string>
+	<key>Show Toolbar</key>
+	<string>ツールバーを表示</string>
+	<key>Someone tripped over the wire to the internet. Or maybe it's the rain. Wait for clear skies and try again.</key>
+	<string>誰かがインターネットのケーブルにつまずいたようです。あるいは雨のせいかもしれません。晴れるのを待って再度お試しください。</string>
+	<key>Something prevented me from reading your crontab - maybe some ion storm in the asteroid belt. See if it's that and fix it or otherwise mail the author (see the About box) and complain like there's no tomorrow.</key>
+	<string>何ものか（小惑星帯のイオン嵐か何か）が crontab の読み込みを邪魔しました。原因を突き止めて解消してください。解消できない場合は、メールで作者に思いきり不満をぶつけてください。</string>
+	<key>The system returned an empty crontab for '%s'. This probably just means that there's no crontab for this user yet. Pressing OK will allow you to edit and install a new crontab and you will never see this alert sheet again. If, however, you are sure that '%s' does have a crontab, then you may have encountered an temporal anomaly. Contact the author (see the About box) and complain like there's no tomorrow.</key>
+	<string>システムからの返答によれば、 ‘%s’の crontab は空です。要するにおそらくこのユーザ用の crontab がまだ作成されていないのです。OK をクリックすると、新規 crontab が作成され編集可能となり、この警告シートが再び表示されることはなくなります。しかし、もし  '%s' 用の crontab がすでに作成済であることが確実なら、これは一時的な例外ということになります。作者にコンタクトして思いきり不満をぶつけてください。</string>
+	<key>There's a new version available at %@.
+
+Changes in version %@:
+</key>
+	<string>%@ より最新バージョンが入手可能です。
+
+Changes in version %@:
+</string>
+	<key>There's no new version available.</key>
+	<string>新しいバージョンはありません。</string>
+	<key>Too bad</key>
+	<string>最悪！</string>
+	<key>Unsaved Data</key>
+	<string>データが保存されていません</string>
+	<key>Update Available</key>
+	<string>アップデートが入手可能です</string>
+	<key>User</key>
+	<string>ユーザー</string>
+	<key>User does not exist</key>
+	<string>ユーザが存在しません</string>
+	<key>You have modified your crontab. Save changes?</key>
+	<string>crontab が変更されました。保存しますか？</string>
+	<key>value</key>
+	<string>値</string>
+</dict>
+</plist>
