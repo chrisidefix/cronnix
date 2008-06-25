@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> "Wijzig taak" venster </title>
+</head>
+<body>
+
+<h2>"Wijzig taak" venster</h2>
+
+<p>Hier is een schermafbeelding van het "Nieuwe taak / Wijzig taak" venster :
+
+<p><IMG SRC=screenshot.jpg ALT=screenshot>
+
+<p>Toen ik CronniX schreef, dacht ik eerst dat het enkel een handig hulpmiddel zou zijn voor Unixgebruikers die graag een 'Spartaanse' gebruikersinterface wilden hebben of, zoals ik, iets met kolomtitels. Het invoeren van een nieuwe crontabopdracht was onlosmakelijk verbonden met de syntaxcontrole 'man 5 crontab'.
+
+<p>Kort na het uitbrengen van de eerste versie(s), verzochten gebruikers mij om een betere crontabdocumentatie (de eerste versie had documentaties als "typ 'man crontab' in de terminal" :-) en een betere interface voor het creeren en wijzigen van taken.
+
+<h3>De interface</h3>
+
+<p>De nieuwe dialoog bestaat uit twee onderdelen: Bovenaan staat het schema en onderaan de opdracht die moet worden uitgevoerd. Het schemagedeelte heeft een tabblad met drie tabs: "Simpel", "Interval", "Expert". Momenteel zijn alleen "Simpel" en "Expert" geimplementeerd.
+
+<p>De opzet is om verschillende tabs te hebben voor verschillende soorten schema's. Als het dialoogvenster wordt verlaten, wordt het schema vertaald naar de taakregel in het hoofdvenster. Als een taak wordt gewijzigd, opent het dialoogvenster, waarbij de velden al ingevuld zijn met het betreffende taakschema en de betreffende taakopdracht.
+
+<h3>De "Simpel" tab</h3>
+
+<p>De "Simpel" tab is bedoeld voor eenmalige taken, d.w.z. taken die of een getal of een '*' in hun schemaveld hebben. Je kunt getallen typen in een tekstveld of de schuifregelaars bewegen. Het is niet mogelijk om een taak te plannen op bijv. 37 januari om 25:00 uur.
+
+<p>De eerste kolom van checkboxen is de 'Een' (= enige/maakt niet uit welke) kolom, een shortcut die in het tekstveld een '*' neer zet en de schuifregelaar helemaal naar links beweegt.
+
+<h3>De "Interval" tab</h3>
+
+<p>Mijn bedoeling is om hier in de toekomst bepaalde shortcuts in te zetten, zoals 'dagelijks', 'wekelijks', 'elke n uur'. Als je zelf een suggestie hebt over wat je hier nuttig zou vinden, laat het me dan weten.
+
+<h3>De "Expert" tab</h3>
+
+<p>Niets nieuws onder de zon. Dit is eigenlijk een herschikking van de velden in het tabelvenster (hoofdvenster). De velden zijn groter en het is wellicht gemakkelijker om hier een bepaald schema te wijzigen.
+
+<h3>Wijzigingen doorgeven </h3>
+
+<p>Alle wijzigingen die je bij een tab maakt, worden doorgegeven aan de andere tabs en deze zullen op hun beurt de veranderingen ook weergeven, mits mogelijk. In de schermafbeelding hierboven bijv., zie je in de 'Expert' tab in het 'Minuut' veld '*/2' staan (om de minuut). Van de drie weergavemogelijkheden in de 'Minuut'-regel van de 'Simpel' tab, kan alleen het tekstveld deze waarde weergeven. Zowel de 'Een' checkbox als de schuifregelaar kunnen niets met de waarde '*/2'.
+
+<p>Dit weerhoudt je er niet van om de verschillende mogelijkheden in de 'Simpel' tab te gebruiken om de waarden weer te veranderen. Het gebruik van een veld of schuifregelaar brengt de weergave van alle velden/schuifregelaars die met het onderwerp te maken hebben up-to-date. De laatste verandering is altijd bepalend voor het eindresultaat.
+
+<p>Ja, een 'Herstel/Opnieuw '-mogelijkheid zou mooi zijn :-). Er wordt aan gewerkt.
+
+<h3>Het 'Opdracht' gedeelte<h3>
+
+<p>Het 'Opdracht' gedeelte is rechttoe-rechtaan. De 'Voorvoegsel...' checkbox schakelt de tekst (het pad) '/usr/bin/open' voor de opdracht aan of uit. De 'Zoek...' knop kun je gebruiken om een bepaald bestand te selecteren uit een bestandsdialoogvenster.
+
+<hr>
+<a href="welcome.html" target="_right">Home</a>
+
+</body>
+</html>
+

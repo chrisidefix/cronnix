@@ -1,0 +1,37 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = MyTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            ACTIONS = {
+                customizeToolbar = id; 
+                duplicateLine = id; 
+                envVariables = id; 
+                insertProgram = id; 
+                loadCrontab = id; 
+                newLine = id; 
+                openForUser = id; 
+                openSystemCrontab = id; 
+                removeLine = id; 
+                runSelectedCommand = id; 
+                showInfoPanel = id; 
+                showhideToolbar = id; 
+                writeCrontab = id; 
+            }; 
+            CLASS = crController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                crTable = id; 
+                deleteMenuItem = id; 
+                duplicateMenuItem = id; 
+                mInsertProgram = id; 
+                mSave = id; 
+                runNowMenuItem = id; 
+                showHideMenuItem = id; 
+                winMain = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

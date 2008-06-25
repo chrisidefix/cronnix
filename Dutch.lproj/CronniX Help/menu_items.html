@@ -1,0 +1,49 @@
+<HTML>
+<head>
+<title> Het CronniX-menu </title>
+</head>
+<body>
+
+<h2>Het CronniX-menu</h2>
+
+<p>Hieronder volgt een beschrijving van verscheidene menu-onderdelen. Alleen de niet-standaard en niet-vanzelfsprekende menu-onderdelen worden behandeld.
+
+<h3>Archief</h3>
+
+<p><b>Nieuwe taak (Cmd-N)</b> Maakt een nieuwe taak in de huidige crontab en opent het "Nieuwe taak"-venster. </p>
+
+<p><b>Nieuwe standaard taak (Opt-Cmd-N)</b> Maakt een nieuwe standaardtaak. Dit geldt voor zowel het hoofdvenster (crontab) als het venster van de omgevingsvariabelen, afhankelijk van welk venster op dat moment het voorste (= actieve) venster is. Is het crontabvenster het actieve venster dan wordt een nieuwe standaardtaak toegevoegd aan de huidige crontab.  Op deze manier omzeil je het dialoogvenster. Is het omgevingsvariabelen-venster het actieve venster dan wordt hier een standaardvariabele met standaardwaarde aan toegevoegd.
+
+<p><b>Open voor gebruiker (Cmd-O)</b> Opent de crontab van een andere gebruiker. Je hebt hier een beheerderswachtwoord voor nodig, tenzij je natuurlijk op deze manier je eigen crontab wilt openen.</p>
+
+<p><b>Open systeemcrontab</b> Opent de systeemcrontab (dat had je vast niet gedacht...). Naast de crontabs van gebruikers (inclusief de <i>root</i> gebruiker), bestaat er een systeemcrontab (op je harde schijf in /etc/crontab). Je kunt deze dus openen en wijzigen. Maar om 'em te bewaren (na een evt.  verandering) heb je een beheerderswachtwoord nodig. En dat is maar goed ook.</p>
+
+<p><b>Bewaar</b> Schrijft eventuele veranderingen naar de huidige crontab. De crontab wordt hierdoor geinstalleerd en geactiveerd.
+
+<p><b>Importeer</b> Importeert een crontabbestand. Zie <a href="general_usage.html#import_export" target="_right">Importeren en exporteren van crontabs</a> voor de details.
+
+<p><b>Exporteer</b> Exporteert de huidige crontab naar een bestand. Zie <a href="general_usage.html#import_export" target="_right">Importeren en exporteren van crontabs</a> voor de details.
+
+<h3>Wijzig</h3>
+
+<p><b>Wijzig taak... (Cmd-M)</b> De geselecteerde taak wordt geopend in het <a href="edit_task_dialog.html">'Wijzig taak' venster</a>.
+
+<p><b>Omg. variabelen (Cmd-E)</b> Opent een venster waarin je omgevingsvariabelen kunt invoeren en hun waarden kunt wijzigen. Omdat opdrachten die de cron-daemon uitvoert, niet in dezelfde omgeving gestart worden als je gebruikelijke login-shell, kun je hier de waarden (instellingen) van omgevingsvariabelen voor je crontab invoeren.</p>
+
+<h3>Taak</h3>
+
+<p><b>Start taak (Cmd-Opt-R)</b> Voert de geselecteerde taak onmiddellijk uit. De opdracht wordt uitgevoerd in een shell (tcsh) en het resultaat wordt weergegeven in een venster. Meer informatie in de <a href="general_usage.html#run_now" target="_right">Algemene handleiding / Start taak</a>.
+
+<p><b>Voeg opdracht in (Cmd-I)</b> Selecteer een programma of script om aan je crontabtaak toe te voegen. Je kunt hier naar keuze het pad "/usr/bin/open" voor zetten. Een programma invoegen heeft hetzelfde effect als drag-and-drop. Meer informatie hierover vind je in de <a href="general_usage.html#drag_and_drop" target="_right">Algemene handleiding / Drag-and-drop</a>.
+
+<h3>Help</h3>
+
+<p><b>CronniX Help</b> Dat heb je al gevonden...
+
+<p><b>CronniX update</b> Als je een actieve internetconnectie hebt, kun je kijken of er een nieuwe(re) versie van CronniX beschikbaar is. Een 'version.xml' bestand van de CronniX homepage wordt vergeleken met jouw CronniX versie. Als er een nieuwere versie is, toont een pagina de verschillen tussen beide versies en word je gevraagd of je wilt doorverbinden naar de CronniX homepage. Er worden geen gegevens over jouw computer verzonden.
+
+<hr>
+<a href="welcome.html" target=_right>Home</a>
+
+</BODY>
+</HTML>

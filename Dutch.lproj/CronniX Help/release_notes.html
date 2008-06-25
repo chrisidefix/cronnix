@@ -1,0 +1,87 @@
+<HTML>
+<head>
+<title>Aantekeningen bij CronniX 2.0</title>
+</head>
+<body>
+
+<h2>Aantekeningen bij CronniX 2.1</h2>
+
+		<P ALIGN=RIGHT><FONT
+		COLOR=#ff0000><FONT SIZE=2>23 februari 2003</FONT></FONT></P>
+
+<p>Versie 2.1 is een kleinere update met de volgende wijzigingen:</p>
+
+<ul>
+<li>Crontab importeren/exporteren toegevoegd.
+<li>Groter, uit meerdere regels bestaand, opdracht-tekstveld in de Taak-dialoog.
+<li>Grijze omlijsting toegevoegd aan het "Een"-checkboxgedeelte van de Taak-dialoog om dit beter te kunnen onderscheiden.
+<li>Bug verholpen: maand en mdag konden  '*' niet bewaren als dit getypt werd in de bewerkingsvelden van de Taak-dialoog.
+<li>Standaard gebruiker voor systeemcrontab-taken is nu 'root' in plaats van 'systeem'.
+<li>De langverwachte Nederlandstalige versie van CronniX (met dank aan <a href="mailto:henktukkers@mac.com?subject=VertalingCronniX">Henk Tukkers</a>).
+</ul>
+
+
+<h2>Aantekeningen bij CronniX 2.0</h2>
+
+		<P ALIGN=RIGHT><FONT
+		COLOR=#ff0000><FONT SIZE=2>31 january 2003</FONT></FONT></P>
+
+<p>De ontwikkeling van versie 2.0 heeft langer geduurd dan verwacht, maar hier is ze dan met een behoorlijk aantal verbeteringen en nieuwe eigenschappen. Ik hoop dat je deze nieuwe versie nuttig zult vinden.
+
+<p>Versie 2.0 is een herschrijving van een gedeelte van het interne datamodel, heeft een verbeterd nieuwe-taak- en wijzig-taakschema, en verhelpt een paar bugs. Hier is een vrijwel compleet overzicht van de wijzigingen:
+
+<ul>
+<li>Verbeterde, dialoog-gebaseerde nieuwe taken.
+<li>Taak-informatie.
+<li>Herschikking van kolommen (en het bewaren hiervan).
+<li>Online controleren of er een nieuwe(re) versie is (handmatig).
+<li>Bug verholpen: startup-crash bij een 'gebroken' crontab.
+<li>Verbeterde Help.
+<li>Intern geherstructureerd datamodel als voorbereiding op MDI.
+</ul>
+
+<h2>CronniX Help</h2>
+
+<p>Er zijn enkele problemen geweest met CronniX Help kort nadat Jaguar op de markt verscheen. Ik heb toen een verbetering aangebracht die werkte bij Jaguar, maar juist weer niet bij 10.1. Help functioneert nu weer goed bij zowel 10.1 als 10.2. Ik heb de betreffende documentatie op de CronniX website gezet:</p>
+
+<p><a href="http://www.koch-schmidt.de/cronnix/docs/index.html" target="_page">CronniX Help op het web</a>
+
+<h2>Bekende problemen</h2>
+
+<ul>
+<li>Grote crontabs: Het is voorgekomen dat CronniX een bijzonder grote crontab niet kon bewaren (141 regels, 13 kB). Ik denk de oorzaak hiervan te weten, maar het kan even duren voor het is verholpen. Probeer ondertussen om keuzemogelijkheden zoveel mogelijk te groeperen: gebruik '*/5' in plaats van 12 keuzes voor minuten van 0,5,10,...,55 (zoals het geval was bij de problematische crontab). Als je de grootte van de crontab kunt beperken tot 8192 bytes (zo'n 80-90 regels) zal CronniX de crontab weer kunnen lezen en bewaren. Sorry voor het ongemak. (Bekijk de 'FAQ en handige tips' voor een uitleg hoe je vanaf de opdrachtregel (prompt) je crontab kunt bewaren, bekijken of verwijderen.)</li>
+<li>Als je de crontab van een andere gebruiker opent, let er dan op dat de "Start taak"-opdracht de taak niet zal uitvoeren onder de naam van die andere gebruiker, maar altijd als de huidige gebruiker. Als je dus de onderhoudstaken in de systeemcrontab wilt uitvoeren als normale gebruiker (ook als beheerder) zal er niets worden gedaan (zelfs geen schade :-), althans voorlopig.</li>
+<li>CronniX verwijdert het commentaar in de systeemcrontab van Norton Scheduler (oh,oh,oh...). Ik zal dit in de volgende versie verhelpen.</li>
+</ul>
+
+<h2>Ondersteun de ontwikkeling van CronniX</h2>
+
+<p>CronniX is gratis en blijft gratis. Je kunt de toekomstige ontwikkeling ondersteunen door middel van een donatie via creditcard / PayPal. Kijk alsjeblieft op</p>
+
+<a href="http://www.koch-schmidt.de/cronnix/donate.html" target="_page">
+http://www.koch-schmidt.de/cronnix/donate.html</a>
+
+<p>voor details. Ik zou het bijzonder waarderen als je hiervoor interesse toont.</p>
+
+<h2>Lokalisatie</h2>
+
+Kijk a.j.b. op de <a href="localization.html" target="_right">Lokalisatie</a> pagina als je CronniX in je eigen taal wilt vertalen.
+
+<h2>Vooruitblik / Volgende versie</h2>
+
+<p>Dit is wat ik voor een toekomstige versie heb gepland:
+
+<UL>
+    <li>Voorkeuren.
+	<li>Herschikking van rijen.
+	<li>"Start taak"-verbetering ('sudo' voor andere gebruikers, verbeterde foutmeldingen)
+    <li>Het afnemen van een geestelijke-gezondheidstest voordat een crontab wordt geinstalleerd.
+    <li>Reageren op toekomstige suggesties van gebruikers.
+</UL>
+
+
+<hr>
+<a href="welcome.html" target="_right">Home</a>
+
+</BODY>
+</HTML>
