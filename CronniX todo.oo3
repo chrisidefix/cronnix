@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE outline PUBLIC "-//omnigroup.com//DTD OUTLINE 3.0//EN" "http://www.omnigroup.com/namespace/OmniOutliner/xmloutline-v3.dtd">
+<outline xmlns="http://www.omnigroup.com/namespace/OmniOutliner/v3">
+  <style-attribute-registry>
+    <style-attribute version="0" key="font-family" group="font" name="family" class="string">Helvetica</style-attribute>
+    <style-attribute version="1" key="font-fill" group="font" name="fill color" class="color">
+      <color w="0"/>
+    </style-attribute>
+    <style-attribute version="0" key="font-italic" group="font" name="italic" class="bool">no</style-attribute>
+    <style-attribute version="0" key="font-size" group="font" name="size" class="number">12</style-attribute>
+    <style-attribute version="0" key="font-weight" group="font" name="weight" class="number">5</style-attribute>
+    <style-attribute version="0" key="item-gutter-color(com.omnigroup.OmniOutliner)" group="row" name="gutter color" class="color">
+      <color w="0" a="0"/>
+    </style-attribute>
+    <style-attribute version="0" key="paragraph-first-line-head-indent" group="paragraph" name="first line head indent" class="number">0</style-attribute>
+    <style-attribute version="0" key="paragraph-head-indent" group="paragraph" name="head indent" class="number">0</style-attribute>
+    <style-attribute version="1" key="underline-color" group="underline" name="color" class="color">
+      <color w="0"/>
+    </style-attribute>
+    <style-attribute version="1" key="underline-style" group="underline" name="style" class="enum">
+      <enum-name-table default-value="0">
+        <enum-name-table-element value="0" name="none"/>
+        <enum-name-table-element value="1" name="single"/>
+        <enum-name-table-element value="2" name="thick"/>
+        <enum-name-table-element value="9" name="double"/>
+      </enum-name-table>
+    </style-attribute>
+  </style-attribute-registry>
+  <settings>
+    <base-style>
+      <style>
+        <value key="item-gutter-color(com.omnigroup.OmniOutliner)">
+          <color r="1" g="1" b="1"/>
+        </value>
+      </style>
+    </base-style>
+  </settings>
+  <editor content-size="{567, 660}">
+    <note-split-view is-note-expanded="no"/>
+    <selected-rows ids="g1eqA67Erz4"/>
+    <selected-columns ids="f00822ae3c666f44095581d7"/>
+    <selected-characters range="{0, 0}"/>
+  </editor>
+  <columns>
+    <column id="c11a4aaa3d6f41824a2b0104" type="text" width="18" minimum-width="18" maximum-width="18" text-export-width="1" is-note-column="yes">
+      <title>
+        <text>
+          <p/>
+        </text>
+      </title>
+    </column>
+    <column id="f00822ae3c666f44095581d7" type="text" width="531" minimum-width="13" maximum-width="1000000" text-export-width="72" is-outline-column="yes">
+      <title>
+        <text>
+          <p/>
+        </text>
+      </title>
+    </column>
+  </columns>
+  <root>
+    <item id="nVA3JqnqiAg" expanded="yes">
+      <style/>
+      <style>
+        <value key="font-size">11</value>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>3.1 Todo, bugs</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="g1eqA67Erz4">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                    <value key="paragraph-head-indent">35</value>
+                  </style>
+                  <lit>From: </lit>
+                </run>
+                <run>
+                  <style>
+                    <value key="paragraph-head-indent">35</value>
+                  </style>
+                  <lit>James Grubic </lit>
+                </run>
+                <run>
+                  <style>
+                    <value key="paragraph-head-indent">35</value>
+                  </style>
+                  <lit><cell href="mailto:james.grubic@bsd7.org" name="james.grubic@bsd7.org"/></lit>
+                </run>
+                <run>
+                  <style>
+                    <value key="paragraph-head-indent">35</value>
+                  </style>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                    <value key="paragraph-head-indent">31</value>
+                  </style>
+                  <lit>Date: </lit>
+                </run>
+                <run>
+                  <style>
+                    <value key="paragraph-head-indent">31</value>
+                  </style>
+                  <lit>18. Mai 2007 18:39:56 MESZ</lit>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                    <value key="paragraph-head-indent">21</value>
+                  </style>
+                  <lit>To: </lit>
+                </run>
+                <run>
+                  <style>
+                    <value key="paragraph-head-indent">21</value>
+                  </style>
+                  <lit><cell href="mailto:info@abstracture.de" name="info@abstracture.de"/></lit>
+                </run>
+                <run>
+                  <style>
+                    <value key="paragraph-head-indent">21</value>
+                  </style>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                    <value key="paragraph-head-indent">47</value>
+                  </style>
+                  <lit>Subject: Bug in Cronnix?</lit>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-size">12</value>
+                  </style>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-size">12</value>
+                  </style>
+                  <lit>Hello,</lit>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-size">12</value>
+                  </style>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-size">12</value>
+                  </style>
+                  <lit>I think I found a bug in Cronnix.</lit>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-size">12</value>
+                  </style>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-size">12</value>
+                  </style>
+                  <lit>When I drag a job from the bottom of the list to the top, the user field (root) became embedded into the command (/bru/checkschedule). This really messed up everything in the Crontab file and I had to start completely from scratch by deleting all entries and entering them again.</lit>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-size">12</value>
+                  </style>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-size">12</value>
+                  </style>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-size">12</value>
+                  </style>
+                  <lit>James</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="eIIXh84TNk-" expanded="yes" state="indeterminate">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>3.0 Todo, bugs</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="d6E_Kbs3mJT">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Hide intervals tab</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="iKUIFs1ON_u">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>add Catalan translation</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="bVTee-0nnOB" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Bug: line breaks in info string</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="jmBsWH5nb5n" state="checked">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>implemented write out multi info lines</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="njCJgjGEDxd" state="checked">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>read back fails for a 14 line test case (fixed -- now using indexOfObjectIdentical instead of indexOfObject)</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="mmI8ucKN2Qt" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Bug: add new env vars after the last env var, not at the end of the list</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="g2XpMeIBcyg" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Env var key and value changes to &quot;Value&quot; when tabbing through</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="luad-vdOfq8" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>index out of bounds on duplicate last line</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="oDOHDXsSJs5" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>keep &quot;@&quot; commands</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="hc8KxBpC87S" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>allow rearranging of tasks</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="gPv5JoIQiWY" state="checked">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>tasks are copied right now instead of moved</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="gmzkWh_MOzQ" state="checked">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>moving backwards overwrites entry</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="fE9lKGWQUYT" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>allow rearranging of env vars</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="acF4zXrF2iD" state="checked">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>moving backwards overwrites entry</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="bjFR9SaX87K" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>implement add, remove, replace env var test (especially about where they are added in a crontab -- after the last env var)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="hztGa7rKS2t" state="checked">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>add/insert</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="lTKHm3e35ne" state="checked">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>remove</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="kKVelBHQb2C" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Keep structure of &apos;non-parsed&apos; content (Norton Scheduler)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="aBkQDQu_VRh" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>eliminate flickering on internal D&amp;D</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="aShO0zGET4D" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>French translation updates (Michaël Ghez, 2005-01-18)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="ks-MJW3T_Y3" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>@-command parsing bug (Reid Ellis, 2005-01-12)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="o1TKv6Kko-k" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>add Japanese Help (credits: Yuzuru Shiraiwa)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="oFTmgLhTE_0" expanded="yes" state="indeterminate">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Feature requests</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="kG4Bna5zUBE" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Preferences</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="cmkzb6t4Wq_">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Prefix open on dnd</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="hiaKc0JXDG8">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>authorize for system crontab reading</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="pQLtizzbbh3">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>default task (time, command)</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="fAIVWCZ-mwh">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>open user crontab on start</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="e1dw4ERAeKG">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>double click edit / edit dialog</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="oF1z-1JkEuV">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>button &quot;System crontab&quot; (Mark Nettleingham, 2004-12-05)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="bZpPYWaobTi">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>add support for cron.log (Mark Nettleingham, 2004-12-05</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="erq5-imSdtm">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>cut, copy, paste for tasks</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="hr5SmaQ2xFT">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>undo</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="eL68O1cI4-X">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>revert to saved</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="oWbLUd8FFyb">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Network crontab (ssh)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="ceUKltlToE1">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>include &quot;man 5 crontab&quot; in docs</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="eI0_PneZRhY">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Unicode encoding to support extended characters</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="pZBT80Yh96U">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>&quot;run next minute&quot; command</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="i4ItIcPg8OC">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>sudo bei &quot;Run now&quot; fuer andere Benutzer</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="lk-lPVZabFj">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Crontab write preview</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="eWt8CfPsBHz">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>scriptability</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="nbl1EXKW5z8">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>display &quot;@&quot; commands</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="bXV9F604A_6">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>anacron </lit>
+                </run>
+                <run>
+                  <style>
+                    <value key="font-family">Monaco</value>
+                    <value key="font-fill">
+                      <color r="0.101961" g="0.101961" b="1"/>
+                    </value>
+                    <value key="font-size">10</value>
+                    <value key="underline-color">
+                      <color r="0.101961" g="0.101961" b="1"/>
+                    </value>
+                    <value key="underline-style">single</value>
+                  </style>
+                  <lit><cell href="http://sourceforge.net/projects/anacron" name="sourceforge.net—anacron"/></lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="cS58jAf7J0z">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>at</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="gm1ow8ptqnz">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>sendmail instructions (folder locations)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="cA_bH_EQz4j">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>2) allow hidden directories to be browsed to import files.  for example, an admin might want to set up multiple users identically.</lit>
+                </run>
+              </p>
+              <p/>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-italic">yes</value>
+                  </style>
+                  <lit>Have you tried Apple-Shift-G to enter a hidden directory? I&apos;ll look into it.</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="no2v40-23OF">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>3) I think it would be nice if entries could be copied/moved between user crontab files, and moved to/from the system crontab.  a move to the system crontab would insert the username, a move from the system crontab would delete the username and move to that user&apos;s crontab.  anacron only seems to mind the system contab, so moving entries would control if anacron will mind an entry.</lit>
+                </run>
+              </p>
+              <p/>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-italic">yes</value>
+                  </style>
+                  <lit>CronniX 3 has full support for moving/dragging/dropping tasks. No multi document at the moment, but I might add it at some point (on the todo list).</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="m7ckgT0vdJZ">
+          <style>
+            <value key="font-family">Monaco</value>
+            <value key="font-size">10</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-fill">
+                      <color r="0" g="0" b="0.866667"/>
+                    </value>
+                    <value key="paragraph-first-line-head-indent">10</value>
+                    <value key="paragraph-head-indent">10</value>
+                  </style>
+                  <lit>&quot;dailyWakeup&quot; version 1, released March 21 2004,is a command line program that will allow the user to queue a wakeup request to their Macintosh. I use the program to wake up my Mac a couple of minutes before each cron job is scheduled to run.</lit>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-fill">
+                      <color r="0" g="0" b="0.866667"/>
+                    </value>
+                    <value key="paragraph-first-line-head-indent">10</value>
+                    <value key="paragraph-head-indent">10</value>
+                  </style>
+                </run>
+              </p>
+              <p>
+                <run>
+                  <lit><cell href="http://homepage.mac.com/levanj/Cocoa/" name="homepage.mac.com—Cocoa"/></lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="p4_mTslmZtx" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>sample submission on webpage</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="dZ20qEMOLBc" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>samples on webpage</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="b6461EE73Ql" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>comments for commands (Colin Foster)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="jduKTJ-PZnE" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>new etc context items (click area sensitive)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="j0A2XYqQvYr" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>&quot;New...&quot; every hour, every X hour, etc...</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="meUE0XMpS3E" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>better syntax description, samples</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="bfLudwkbz1w" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>buttons for &quot;Run now&quot; und &quot;Insert program&quot;</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="a0X_TOfMY_t" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>task dialog</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="awal2Oob9e6" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>save reordered columns</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="m6YaY2jU-c4" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>hor. scrollbar (for command)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="ajINK2mxL_a" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>weblink in help menu/help file</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="fl95byqMZ7t" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Low priority / hard to address bugs</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="aHBC-Dle84z">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Bug: Large crontab</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="fBOMVMG_kU7">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>I was editing a cron file for an admin user, and tried to run one of the commands.  the request for authentication (password) appeared in the console, but I couldn&apos;t respond to answer it.</lit>
+                </run>
+              </p>
+              <p/>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-italic">yes</value>
+                  </style>
+                  <lit>I&apos;m not sure what could have caused this but the file reading/writing is redone in CronniX 3 (not released, no ETA). From your description it sounds like running a command on an unsaved crontab triggers save first and then blocks because the main window is in the background. I&apos;ll investigate.</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="kFFP0qKIQiY">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>2) I was in an admin account.  I created a crontab for standard user and saved it.  then, I created a crontab for the admin user (the account I was in) and I could not save it.  it said I didn&apos;t have sufficient privileges, and did not prompt for authentication.</lit>
+            </run>
+          </p>
+          <p/>
+          <p>
+            <run>
+              <style>
+                <value key="font-italic">yes</value>
+              </style>
+              <lit>Hm, sounds like you created a protected file for another user. CronniX only expects to find protected files in certain places, not on opening a user&apos;s own crontab. I&apos;m not sure if that&apos;s the case, though, as all files in /var/cron/tabs are root owned. Perhaps the cron tool itself can&apos;t read it. Check the permissions in /var/cron/tabs:</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+    </item>
+    <item id="cFyeNVKT4iM" expanded="yes" state="checked">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Bugs</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="bxyEj3wXrED" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>add user for new system crontab line</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="pQp4F7EjYCc" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>catch nil values in e.g. wday (per anderson)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="fntluxj-kfA" state="checked">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>fix crash on &quot;@&quot; commands</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+      </children>
+    </item>
+  </root>
+</outline>

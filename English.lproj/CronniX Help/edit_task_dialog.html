@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> Edit Task Dialog </title>
+</head>
+<body>
+
+<h2>Edit Task Dialog</h2>
+
+<p>Here's a screenshot of the new task dialog:
+
+<p><IMG SRC=screenshot.jpg ALT=screenshot>
+
+<p>When I first wrote CronniX, I only thought of it as a handy tool for unix heads you want some kind of spartan interface or, like me, something with column headers -- every command line crontab editing was inevitably accompanied by a 'man 5 crontab' syntax lookup.
+
+<p>Soon after I had released the first versions, I was contacted by people you wanted better documentation of the syntax (the first release had docs like "type 'man crontab' in the terminal" :-) and a better interface for task creation/editing.
+
+<p>I have finally found the time to add this task editing interface in version 2.0. It's not only helpful for people upgrading from OS 9 who don't know cron, but also for a few unix gurus who like to flip a switch from time to time, I hope.
+
+<h3>The Interface</h3>
+
+<p>The new dialog has two parts: On the top is the schedule, on the bottom the command to be executed. The schedule section has a tabbed pane with three tabs: "Simple", "Intervals", "Expert". Currently, only "Simple" and "Expert" are implemented.
+
+<p>The idea is to have different tabs for different kinds of schedules. When the dialog is dismissed, the schedule is translated to the usual task line in the main window. When a task is edited, the dialog will open with its fields preset to the tasks schedule and command. (As you can see, the task info currently isn't part of the creating/editing scheme.)
+
+<h3>The "Simple" Tab</h3>
+
+<p>The "Simple" tab is intended for 'one time/any time' tasks, i.e. tasks that either have a number or a '*' in their schedule fields. You can either type numbers in to the text fields or move the sliders. The controls will prevent you from scheduling things at 25:00 hours on Jan, 37.
+
+<p>The first column of checkboxes is the 'Any' column, a shortcut that will set the text field to '*' and move the slider all the way to the left.
+
+<h3>The "Intervals" Tab</h3>
+
+<p>On this tab, I plan to provide certain shortcuts, like 'daily', 'weekly', 'every n hours'. Feel free to make any suggestions on what you would find useful here.
+
+<h3>The "Expert" Tab</h3>
+
+<p>This tab is nothing new: It's basically a rearrangement of the edit fields in the table view. They are a bit larger and you might find it more convenient to edit a schedule here. I have been considering to make direct editing in the table view configurable, such that you can choose to map a double click on a line to opening the edit dialog for that task instead of taking the table cell into edit mode.
+
+<h3>Change Propagation</h3>
+
+<p>Any changes you make on a tab are communicated to the other tabs. Their controls will try to reflect these changes if possible. For example in the screenshot above, you can see that the 'Minute' field was set to '*/2' (every other minute) on the 'Expert' tab. Of the three controls in the 'Minute' line of the 'Simple' tab, only the text field can display this value. Both the 'Any' checkbox and the slider can make nothing out of '*/2'.
+
+<p>This does not prevent you from using the controls on the 'Simple' tab to change values again. Using any control will sync the states between all controls related to that item. The latest change will write its result to the field, other controls will try to keep up as best they can.
+
+<p>Yes, Undo/Redo would be nice :-). It will come.
+
+<h3>The 'Command' section</h3>
+
+<p>The 'Command' section is pretty straightforward. The 'Prepend...' checkbox toggles the presence of '/usr/bin/open' in front of the command, while the 'Browse' button will allow you to select a file from a standard file dialog.
+
+<hr>
+<a href="welcome.html" target="_right">Home</a>
+
+</body>
+</html>
+

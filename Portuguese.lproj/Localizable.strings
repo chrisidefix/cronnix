@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>
+The output will appear below when the command has finished executing
+</key>
+	<string>
+The output will appear below when the command has finished executing
+</string>
+	<key>0 0 1 1 * echo "Happy New Year!"</key>
+	<string>0 0 1 1 * echo "Feliz Ano Novo!"</string>
+	<key>Add new environment variable</key>
+	<string>Adicionar nova variável de sistema</string>
+	<key>Apply</key>
+	<string>Aplicar</string>
+	<key>Bummer</key>
+	<string>Desilusão</string>
+	<key>Cancel</key>
+	<string>Cancelar</string>
+	<key>Connection failure</key>
+	<string>Falha na conecção</string>
+	<key>Couldn't convert value</key>
+	<string>Não foi possível converter valor</string>
+	<key>Create new crontab entry</key>
+	<string>Criar nova entrada na tabela 'cron'</string>
+	<key>Crontab for user:</key>
+	<string>Tabela Cron para utilizador:</string>
+	<key>Current crontab</key>
+	<string>Tabela Cron corrente</string>
+	<key>Delete</key>
+	<string>Apagar</string>
+	<key>Discard</key>
+	<string>Descartar</string>
+	<key>Edit</key>
+	<string>Editar</string>
+	<key>Edit task</key>
+	<string>Editar tarefa</string>
+	<key>Empty Crontab</key>
+	<string>Limpar Tabela Cron</string>
+	<key>Failure</key>
+	<string>Falha</string>
+	<key>Go to download page</key>
+	<string>Ir à pagina de download</string>
+	<key>Hide Toolbar</key>
+	<string>Esconder Barra de Ferramentas</string>
+	<key>I couldn't find a home directory for '%@' on your system. Maybe you mistyped the name or (god no!) deleted the directory. Better have look...</key>
+	<string>Não foi possível encontrar a directoria "casa" para '%@' no seu system. Talvez tenha digitado mal o nome ou (ai ai!) apagado a directoria. Melhor dar um olhito...</string>
+	<key>Insert</key>
+	<string>Inserir</string>
+	<key>Insufficient privileges to write crontab for user "%s".</key>
+	<string>Previlégios insuficientes para escrever a tabela Cron do utilizador "%s".</string>
+	<key>Insufficient privileges to write crontab.</key>
+	<string>Previlégios insuficientes para escrever a tabela Cron.</string>
+	<key>New</key>
+	<string>Novo</string>
+	<key>No Update Available</key>
+	<string>Actualização Indisponível</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>Open</key>
+	<string>Abrir</string>
+	<key>Open crontab for different user</key>
+	<string>Abrir Tabela Cron para outro utilizador</string>
+	<key>Remove crontab entry</key>
+	<string>Remover entrada Tabela Cron</string>
+	<key>Remove environment variable</key>
+	<string>Remover variável de sistema</string>
+	<key>Run Now</key>
+	<string>Executar Agora</string>
+	<key>Run now</key>
+	<string>Executar agora</string>
+	<key>Run task now</key>
+	<string>Executar tarefa agora</string>
+	<key>Running command
+</key>
+	<string>A executar comando</string>
+	<key>SOME_ENV</key>
+	<string>VAR_XPTO</string>
+	<key>Save</key>
+	<string>Guardar</string>
+	<key>Save crontab</key>
+	<string>Guardar Tabela Cron</string>
+	<key>Show Toolbar</key>
+	<string>Mostrar Barra de Ferramentas</string>
+	<key>Someone tripped over the wire to the internet. Or maybe it's the rain. Wait for clear skies and try again.</key>
+	<string>Alguém tropeçou no fio de ligação internet. Ou talvez seja da chuva. Espere por dias melhores e tente novamente.</string>
+	<key>Something prevented me from reading your crontab - maybe some ion storm in the asteroid belt. See if it's that and fix it or otherwise mail the author (see the About box) and complain like there's no tomorrow.</key>
+	<string>Alguma coisa impediu a leitura da sua Tabela Cron - talvez uma tempestada iónica no cinturão de asteroides.  Veja se é isso e componha ou então envie um email ao autor  (ver o diálogo Acerca) e queixe-se como se não houvesse amanhã.</string>
+	<key>The system returned an empty crontab for '%s'. This probably just means that there's no crontab for this user yet. Pressing OK will allow you to edit and install a new crontab and you will never see this alert sheet again. If, however, you are sure that '%s' does have a crontab, then you may have encountered an temporal anomaly. Contact the author (see the About box) and complain like there's no tomorrow.</key>
+	<string>O sistema devolveu uma Tabela Cron vazia para '%s'. Isto se calhar só significa que ainda não existe uma Tabela Cron para este utilizador. Premir OK irá permitir-lhe que possa editar e instalar uma nova Tabela Cron e jamais voltará a ver este alerta. Se, contudo, tiver a certeza que '%s' tem de facto uma Tabela Cron, então talvez tenha encontrado uma anomalia temporal. Contacte o autor (ver no diálogo Acerca) e queixe-se como se não houvesse amanhã.</string>
+	<key>There's a new version available at %@.
+
+Changes in version %@:
+</key>
+	<string>Existe uma nova versão disponível em %@.
+
+Changes in version %@:
+</string>
+	<key>There's no new version available.</key>
+	<string>Não existe uma nova versão disponível.</string>
+	<key>Too bad</key>
+	<string>Paciência</string>
+	<key>Unsaved Data</key>
+	<string>Informação não guardada</string>
+	<key>Update Available</key>
+	<string>Actualização Disponível</string>
+	<key>User</key>
+	<string>Utilizador</string>
+	<key>User does not exist</key>
+	<string>Utilizador não existe</string>
+	<key>You have modified your crontab. Save changes?</key>
+	<string>Modificou a sua tabela Cron. Guardar alterações ?</string>
+	<key>echo "Happy New Year!"</key>
+	<string>echo "Feliz Ano Novo!"</string>
+	<key>value</key>
+	<string>valor</string>
+</dict>
+</plist>

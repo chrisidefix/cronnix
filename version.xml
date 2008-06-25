@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/P
+ropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>Product</key>
+        <string>CronniX</string>
+		<key>Version</key>
+		<string>3.0.2</string>
+		<key>Changes</key>
+		<array>
+      <string>*Really* a Universal binary</string>
+      <string>Fixed homepage URL (Help menu)</string>
+		</array>
+</dict>
+</plist>

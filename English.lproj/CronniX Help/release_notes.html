@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title> CronniX 3 Release Notes</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+<h2>CronniX 3.0 Release Notes</h2>
+<p align="RIGHT"><font color="#ff0000"><font size="2">June 11, 2005</font></font></p>
+<p>Version 3.0 is a major update with the following changes</p>
+
+<p><i>3.0.2</i> </p>
+<ul>
+	<li><b>Really</b> a Universal binary</li>
+  <li>Fixed homepage URL (Help menu)</li>
+</ul>
+
+<p><i>3.0.1</i> </p>
+<ul>
+	<li>Universal binary</li>
+</ul>
+
+<p><i>3.0</i> </p>
+<ul>
+	<li>Japanese localization including Help by Yuzuru Shiraiwa</li>
+	<li>Catalan localization by Xavier Blanquer</li>
+	<li>Danish localization by Sebastian Adorján Dyhr</li>
+</ul>
+<p>Thanks a lot for these translations, CronniX now comes in twelve languages!</p>
+<p><i>3.0b3</i> </p>
+<ul>
+	<li>Fixed parsing bug: User column of system crontab was ignored</li>
+	<li>Fixed parsing bug: '=' sign in command string caused tasks to be read in a environment variables</li>
+	<li>Fixed display issue: Info text field was not updated after deletes</li>
+</ul>
+<p><i>3.0b2</i> </p>
+<ul>
+	<li>Fixed column resizing in the English version</li>
+	<li>Updated Japanese localization (thanks to Yuzuru Shiraiwa for the update)</li>
+	<li>Updated French localization (thanks to Michaël Ghez, Claude Tamone, Damien Bobillot for their contributions. I've included Damien's translations as it was the latest -- in order to prevent folks from independently translating CronniX please always check back with me if there's an updated localized variant that's not released yet. There have been several occasions where I had to choose between translations and believe me there's little justice I can do your fine work with most of the languages you translate CronniX to :)) </li>
+	<li>Included all remaining localizations </li>
+</ul>
+<p><i>3.0b1</i></p>
+<ul>
+	<li>New crontab parsing: preserving unknown/unparsable content</li>
+	<li>Drag and drop of tasks and environment variables (within CronniX and cross applications)</li>
+</ul>
+<h2>CronniX Help</h2>
+<p>The CronniX documentation is available from the Help menu in the application as well as on the CronniX website:</p>
+<p><a href="http://www.abstracture.de/projects-en/cronnix/">CronniX Help on the web</a> </p>
+<h2>Known Problems</h2>
+<ul>
+	<li>Large crontabs: There's been a case where CronniX failed to save a very large (141 lines, 13 kB) crontab. I believe to know the cause of this, but fixing it will take some time. In the meantime, try to group entries by making intervals like '*/5' instead of having 12 entries for a minute of 0,5,10,... (as was the case in the problematic crontab) if possible. Reducing the crontab to a size below 8192 bytes (typically some 80-90 lines) will allow CronniX to read and write your crontab again. Sorry for the inconvenience. (See the FAQ for hints on how to save, view or remove your crontab from the command line.)</li>
+	<li>If you open another user's crontab, be aware that the "Run Now" command will not execute the command as that user. They will always run as the current user. Therefore running the maintenance tasks in the system crontab as a regular user (even an administrator) will not do anything (not even harm :-) right now.</li>
+</ul>
+<h2>Support Development</h2>
+<p>CronniX is free and remains free. You can support its future development by making a credit card / PayPal donation. Please see</p>
+<a href="http://www.abstracture.de/projects-en/cronnix/donate.html"> http://www.abstracture.de/cronnix/donate.html</a> 
+<p>for details. I'd appreciate it a lot if you'd have a look.</p>
+<h2>Localization</h2>
+<p> Please head to the <a href="http://www.abstracture.de/projects-en/cronnix/localization/">localization section</a> if you want to translate CronniX to your language. </p>
+<h2>Outlook / Next Version</h2>
+<p>Here's what I have planned for a future release: </p>
+<ul>
+	<li>Preferences </li>
+	<li>"Run Now" improvement (sudo for other users, better error reporting) </li>
+	<li>Perform sanity checks before installing a crontab </li>
+	<li>React to future user suggestions </li>
+</ul>
+<hr> <a href="http://www.abstracture.de/projects-en/cronnix/">Home</a> 
+</body>
+</html>

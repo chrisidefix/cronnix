@@ -1,0 +1,126 @@
+<HTML>
+<head>
+<title> Frequently Asked Questions and Usage Tips </title>
+</head>
+<body>
+
+<h2>Frequently Asked Questions and Usage Tips</h2>
+
+<p><i><b>Will you release CronniX as Open Source</b></i></p>
+
+Yes. Starting with version 1.5 I release CronniX as Open Source. I might not always manage to package the latest version as OpenSource immediately, though. Bear with me.
+
+<hr>
+
+
+
+<p><i><b>What do I need to do to start cron?</b></i>
+
+<p>Cron is a system process that's already running. All you have to do to schedule your jobs is save the changes in a crontab. Cron looks at all the files every minute and starts pending jobs.
+
+
+<hr>
+
+
+<p><i><b>How do I know if my crontab works?</b></i><br>
+
+<p>It can be a little tricky to set up a crontab because often enough you have some script that works fine on the command line but fails if called by cron due to the different runtime environment. Here comes in handy that cron's output is sent via email to the crontab's owner.
+
+
+
+<p><i><FONT
+		COLOR=#ff0000>The following applies to OS X 10.1 and earlier. See below for Jaguar instructions.</font></i>
+
+<p>In order to get local mail you need to set a special mail account in Mail.app. This is from a hint at <a href=http://www.macosxhints.com>www.macosxhints.com</a>:
+
+<p>"An easier way"<br>
+Authored by: frjo on Tue, May 8 at 11:05AM
+<ul>
+<li>Start up Mail, create a Unix mail account with your user name if you don't have one already.
+<li>Click on "Mailboxes", select "Personal Mailboxes" from the list, and then select menu item "Mailbox/New Mailbox...". Name the new mailbox "Active", then quit and restart Mail.
+<li>All local mail sent to you should now end up in the "Active" mailbox. I got this tip from some old NeXTSTEP user.
+</ul>
+
+<p>You don't need to have sendmail running for delivery of local mail, so this is basically all you need to do to get local (and therefore cron's) mail. While you're at it you can also create a forward of root's mail to your account. You do this by creating a file called ".forward" with your short user name in it in root's home directory "/private/var/root".
+
+
+
+
+<p><i><FONT
+		COLOR=#ff0000>The following applies to OSX 10.2 (Jaguar)</font></i>
+
+<p>It seems like the 'Unix mail account' account type has disappeared from Mail.app's account setup options in Jaguar. Unless you reinstalled, the old 'UNIX:' type entries in ~/Library/Mail/ are still there but they're ignored.
+
+<p>Here's how we can get a look at local mail again:
+
+<ul>
+<li> Quit Mail.app (safety precaution)
+
+<li> Run "sudo chmod 1777 /var/mail" in the terminal<br>
+	Mail.app requires this or it will not read from the mailbox files there.
+
+<li> cd ~/Mailboxes/INBOX.mbox
+
+<li> mv mbox mbox.bak
+
+<li> Create a symbolic link to you mailbox in /var/mail. This mailbox is named after your short username (and might not exist if you don't have any mail). E.g. my username is 'sas', so I do the following:<br>
+	ln -s /var/mail/sas mbox<br>
+	This creates a link named 'mbox' pointing to my mailbox file in /var/mail (where sendmail stores local mail).
+</ul>
+
+Test:
+<ul>
+
+<li>Make sure sendmail is running:
+	<ul>
+    <li> Set MAILSERVER=-YES- in /etc/hostconfig
+    <li> Run "sudo chmod g-w /" in the terminal to keep sendmail happy
+    <li> Run "sudo SystemStarter start SMTP" in the terminal<br>
+   (Previously, local mail would be delivered without sendmail running but this has changed in Jaguar, too. I haven't investigated why.)
+	</ul>
+<li> send local mail, e.g.:<br>
+	echo test | mail -s Testmail sas<br>
+   (replace 'sas' with your username, of course)
+<li>check the Folder 'On My Mac' in Mail.app's Inbox to see if it worked.
+
+</ul>
+
+Caveat:
+
+<p>Reading mail like that works and the change sticks <b>unless</b> you delete mail from your local inbox. When you do that, Mail replaces the link to /var/mail/<username> with a plain mbox file again. You have to reestablish the link to get your local mail again.
+
+<p>There's this tool cron that could schedule a script to check if 'mbox' is still a link or should be relinked... :-)
+
+
+<hr>
+
+<p><i><b>How do I know if a task triggers at the intended time?</b></i>
+
+<p>Either you set up the mail account as described above and generate some output with your script/program or you test it by touching a test file from your script: "touch /tmp/crontest". You can then look at the timestamp of this file to see if your task was triggered.</p>
+<p>A quick test if cron is working can be made by dragging and dropping a program like TextEdit on CronniX' main window. Set the time a minute ahead wait for it to pop up.</p>
+
+<hr>
+
+<p><i><b>My crontab is screwed up and CronniX won't read it anymore. What can I do?</b></i>
+
+<p>Use the following command in the terminal to get a look at your crontab:<br>
+crontab -l<br>
+(That's a lower case ell there)
+
+<p>If you want to remove your crontab to start from scratch do:<br>
+crontab -r
+
+<p>To save your crontab to a file that you can edit with a text editor, run<br>
+crontab -l > ~/my_crontab<br>
+This will 'pipe' the crontab to the file 'my_crontab' in your home directory.
+
+<p>After you've edited 'my_crontab' (be careful to use 'Plain text' if you're editing it with TextEdit, RTF format will not be cron's friend), you can install it with<br>
+crontab ~/my_crontab
+
+<p>This is cron in a nutshell. I hope you don't dispose of CronniX now that you know it.
+
+<hr>
+<a href="welcome.html" target=_right>Home</a>
+
+</BODY>
+</HTML>

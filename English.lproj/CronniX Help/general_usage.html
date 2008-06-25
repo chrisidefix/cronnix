@@ -1,0 +1,125 @@
+<HTML>
+<head>
+<title> General Usage </title>
+</head>
+<body>
+
+<h2>General Usage</h2>
+
+<p>The system's scheduler "cron" is a Unix program that is automatically started at system startup. Every minute, it checks so-called "crontabs" for tasks that should be executed. Every user of a system and the system itself can have <b>one</b> crontab. CronniX allows you to edit all of these crontabs one at a time.</p>
+
+<p>Let's have a look at CronniX's user interface:</p>
+
+<a href="screenshot.html" target="_right"><IMG SRC=screenshot2.jpg ALT=screenshot></a>
+
+<h3>Main Window</h3>
+
+<p>The front window is CronniX's main window. It shows line by line all the tasks that comprise this crontab. The status icon in the toolbar displays whose crontab's being edited. If the toolbar is hidden, the window title will take over., The current user's crontab is read and displayed on startup.</p>
+
+<p>The toolbar is customizable with the default set containing all items. They are: New, Delete, Open, Save, Status, and Edit. Except for the status icon, all toolbar icons have corresponding menu items. Here's what they do:</p>
+
+<table>
+
+<tr><td width=150 valign=top>
+<b>New Task (Cmd-N)</b></td>
+<td>Create a new entry (task) in this crontab with the task editing/creation dialog.</td></tr>
+
+<tr><td valign=top>
+<b>Delete</b></td> <td>Only available if an entry is selected. Deletes the currently selected entry.</td></tr>
+
+<tr><td valign=top>
+<b>Open (Cmd-O)</b></td> 
+<td>Open a different crontab. You will need to authenticate to open other users' crontabs. The system crontab can be opened (but not saved) without authentication.</td></tr>
+
+<tr><td valign=top>
+<b>Save (Cmd-S)</b></td>
+<td>Save current crontab. It will be available to the system scheduler immediately.</td></tr>
+
+<tr><td valign=top>
+<b>Status</b></td> 
+<td>Shows whose crontab is being displayed. For the system crontab, this will read "system".</td></tr>
+
+<tr><td valign=top>
+<b>Edit</b></td> 
+<td>Open the 'edit task' dialog for the currently selected task.</td></tr>
+
+<tr><td valign=top>
+<b>Run Now</b></td> 
+<td>Executes the currently selected task.</td></tr>
+
+</table>
+
+<p>Below the toolbar, you see the list of tasks in this crontab. The crontab fields can be edited by double clicking. See the section about the <a href="crontab_syntax.html" target="_right">crontab syntax</a> for information on the fields in a crontab entry / task. The checkbox in front of each line allows you to activate/deactivate a task.</p>
+
+<p>There's a context menu for task specific commands available. Right click on a task to select a task and display the menu.</p>
+       
+<h3>Task Info</h3>
+
+<p>In version 2.0, a text field for task comments was added below the task list. The separator between this info field and the task list can be dragged up and down to resize the views. Clicking on a task shows its description (as entered by the user) in the info field. Just edit the text in the info field and it will be saved along with the task.
+
+<h3>Environment Variables Window</h3>
+
+<p>Tasks scheduled for execution by cron run in a special environment that will not read your customized .cshrc or .login scripts (If you're not the UNIX type and don't know what I'm talking about - don't worry about this). If you still need to set environment variables like MAIL for scripts that you start via cron, you need to put them into your crontab directly. You do this by bringing up the environment variables window via the "Edit/Env. Variables" menu or just by hitting Cmd-E.</p>
+
+<p>The environment variables window is very similar to the main window. It has its own toolbar with two buttons:</p>
+
+<table>
+<tr><td width=100 valign=top><b>New (Cmd-N)</b></td> <td>Create a new environment variable entry.</td></tr>
+<tr><td valign=top><b>Delete</b></td> <td>Only available if an entry is selected. Deletes the currently selected entry.</td></tr>
+</table>
+
+<p>For the sake of consistency I couldn't resist to make this toolbar customizable as well. In good old math book style: We leave it up to the user to figure out in how many ways one can arrange two buttons.
+
+<h3>Opening other users' crontabs</h3>
+
+<p>You can edit other users' crontabs by selecting "Open For User" from the "File" menu (shortcut: Cmd-O). This will require Administrator authorization (if you enter a username other than yours or "system") and you will be asked to enter your password.</p>
+
+<p>There's also a system crontab that allows scheduling of system tasks outside of any user crontabs. It is <em>not</em> identical to root's crontab. You can view the system crontab by choosing "Open System Crontab" from the "File" menu or by entering "system" as the user name when opening another user's crontab. Note that you can view the system crontab without authorization, but saving it requires Administrator rights. (I will make the unauthorized viewing configurable in the future.)</p>
+
+<h3><a name="drag_and_drop">Drag and Drop / Insert Program<a></h3>
+
+<p>CronniX features drag and drop which, for example, is useful if you have several AppleScripts that you want to add to your crontab. Grab the files in the finder and drag them to your crontab.
+
+<p>If you
+<ul>
+<li>drop a selection on a blank area the selected items will populate new crontab tasks
+<li>drop a selection on an existing line, its command will be replaced by the selection
+<li>drop multiple files on a task, that task's command will be replaced with the first file and new tasks for the remaining item will be created.
+</ul>
+
+<p>Drag and drop operations will only affect the 'Command' field of a task. New tasks will be added with the schedule of a default task and the file part in the 'Command' field.
+
+<p>Files added to a crontab in this way will be prefixed with "/usr/bin/open" automatically. That's necessary to start "applications" from the command line. Applications in this context are programs that are usually started via the GUI, i.e. by double-clicking them in the Finder. Shell scripts should not have this prefix, but they are not assumed to be drag'n'dropped. (This will be configurable in the future.)</p>
+
+<p>You can easily remove the "/usr/bin/open" prefix by opening the edit task dialog and unchecking the 'Prepend "/usr/bin/open"' checkbox.</p>
+
+<p>You can also drag and drop text selections. These will replace the command if dropped on a line or create a new task with the text as the command if dropped on a blank area.</p>
+
+<p>The menu bar equivalent to the drag and drop feature for files is "Insert Program" in the "Edit" menu (shortcut Cmd-I). A standard file dialog will pop up allowing selection of one or more files (use the Cmd or Shift key to extend the selection) to be added.</p>
+
+<h3><a name="run_now">"Run Now" Command</a></h3>
+
+<p>If you don't want to stay up all night to see your script executing at 3 AM there's a feature that allows you to run a command immediately. The command will be executed in a shell (tcsh) and its output will be displayed in a window.</p>
+
+<p>Note that even though this might be useful for testing, the tcsh environment is not the same as the cron daemon's. On some occasions, your tcsh might have a program in its path, for example, while the cron daemon can't find it. On the other hand if a command runs in cron's environment you shouldn't have problems using the "Run now" command.</p>
+
+<p>This is only true for tasks running in your own crontab. Currently, the 'Run Now' command does not use sudo to run a task for the user whose crontab you are editing. So, if you are viewing the system crontab, using the 'Run Now' command will not do much good, because unless you run CronniX as 'root' you will not have permission to run the maintenance scripts for example. (Well, to be technically correct, you can run the scripts, but what's inside them does things a regular user isn't allowed to do so that in effect executing the content of the maintenance scripts will fail.)
+
+<p>Improvement of the 'Run Now' feature is high on my todo list.
+
+
+<h3><a name="import_export">Import and Export of crontabs</h3>
+
+<p>Version 2.1 brought import and export of crontabs. You can find the corresponding menu items in the file menu. CronniX will save and read files. The default extension for crontabs is "crontab". The commands are "safe", i.e. you will be asked to save changes (if any) before importing a crontab.</p>
+
+<p>CronniX will remain a single document application for now. Therefore, it doesn't register as a handler for "crontab" files right now, because CronniX will not be able to pop up another crontab window, but instead would replace your current crontab with the file. Making CronniX a multi document application would mean more work than I can currently handle.</p>
+
+<p>Please note that after importing/exporting, the edited crontab remains in its original context, meaning that it will still be associated with your user crontab, the system crontab, etc. It is not a representation of the file you loaded/saved,  but rather the new content of the crontab you were previously editing. The changes are not commited until you save (install) the crontab again.</p>
+
+<p>The next feature request will be appending of crontabs from files, I guess... Consider it planned.</p>
+
+<hr>
+<a href="welcome.html" target=_right>Home</a>
+
+</BODY>
+</HTML>

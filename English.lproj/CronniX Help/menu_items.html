@@ -1,0 +1,49 @@
+<HTML>
+<head>
+<title> Menu Items </title>
+</head>
+<body>
+
+<h2>Menu Items</h2>
+
+<p>The following describes the various menu items. Only non-standard and possibly non-obvious menu item are explained.
+
+<h3>File</h3>
+
+<p><b>New Task (Cmd-N)</b> Add a new entry. This will work for either the main crontab window or the environment variables window, whichever is front. In case of the crontab window, a new default task with will be added, for the environment variables window, a new default environment variables entry will be added.</p>
+
+<p><b>New Default Task (Opt-Cmd-N)</b> Create a new default task in this crontab. This will bypass the dialog and just add a new default task to the crontab. (I will add preferences soon, so that default tasks can be customized.)
+
+<p><b>Open for User (Cmd-O)</b> Opens another user's crontab. You will have to authenticate unless you enter your current user name.</p>
+
+<p><b>Open System Crontab</b> In addition to all the user crontabs (including the <i>root</i> user) there is a system crontab (stored in /etc/crontab). You can edit it by selecting this menu command or by opening for the user "system". Currently you will not need to authenticate to display the system crontab but saving any changes will require authentication. </p>
+
+<p><b>Save</b> Save changes to the current crontab. This will install the crontab and make its schedules active.
+
+<p><b>Import</b> Import a crontab file. See <a href="general_usage.html#import_export" target="_right">import/export</a> for more details.
+
+<p><b>Export</b> Export the current crontab to a file. See <a href="general_usage.html#import_export" target="_right">import/export</a> for more details.
+
+<h3>Edit</h3>
+
+<p><b>Edit Task... (Cmd-M)</b> The currently selected task will open in the <a href="edit_task_dialog.html">'Edit Task' dialog</a>.
+
+<p><b>Env. Variables (Cmd-E)</b> A window to edit the environment variables for your crontab will open (see screenshot below). Since jobs that are started by the cron daemon will not run in the same environment as your usual login shell, you can provide env. variables in your crontab. In the env. variable window you can enter an env. variable and its value.</p>
+
+<h3>Task</h3>
+
+<p><b>Run Now (Cmd-Opt-R)</b> Run the selected task immediately. The command will be executed in a shell (tcsh) and its output will be displayed in a window. More info in <a href="general_usage.html#run_now" target="_right">General Usage / "Run Now" Command</a>.
+
+<p><b>Insert Program (Cmd-I)</b> You can select a program or script that will be added to your crontab on a new line. The string &quot;/usr/bin/open&quot; will be prepended. This is equivalent to the drag and drop behavior. More info in <a href="general_usage.html#drag_and_drop" target="_right">General Usage / Drag and Drop</a>.
+
+<h3>Edit</h3>
+
+<p><b>CronniX Help</b> Well you found that all right...
+
+<p><b>Check for updates</b> Provided you have an active internet connection you can check if there's a new version of CronniX available. No data will be sent from your machine. All this does is fetch a 'version.xml' file from the CronniX homepage and check its revision against your CronniX version. If there's an update available, a sheet will display the changes and ask you if you want to connect to the CronniX homepage with your default browser.
+
+<hr>
+<a href="welcome.html" target=_right>Home</a>
+
+</BODY>
+</HTML>

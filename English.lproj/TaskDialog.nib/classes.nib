@@ -1,0 +1,107 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                acceptButtonClicked = id; 
+                anyHourCheckboxClicked = id; 
+                anyMdayCheckboxClicked = id; 
+                anyMinuteCheckboxClicked = id; 
+                anyMonthCheckboxClicked = id; 
+                anyWdayCheckboxClicked = id; 
+                browseButtonClicked = id; 
+                cancelButtonClicked = id; 
+                openCheckboxClicked = id; 
+                sliderMoved = id; 
+                wdayCheckboxClicked = id; 
+            }; 
+            CLASS = NewTaskDialogController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                anyHourCheckbox = id; 
+                anyMdayCheckbox = id; 
+                anyMinuteCheckbox = id; 
+                anyMonthCheckbox = id; 
+                anyWdayCheckbox = id; 
+                browseButton = id; 
+                commandTextField = id; 
+                frCheckbox = id; 
+                hourSlider = id; 
+                hourTextField = id; 
+                mdaySlider = id; 
+                mdayTextField = id; 
+                minuteSlider = id; 
+                minuteTextField = id; 
+                moCheckbox = id; 
+                monthSlider = id; 
+                monthTextField = id; 
+                openCheckbox = id; 
+                saCheckbox = id; 
+                simpleHourTextField = id; 
+                simpleMdayTextField = id; 
+                simpleMinuteTextField = id; 
+                simpleMonthTextField = id; 
+                suCheckbox = id; 
+                submitButton = id; 
+                thCheckbox = id; 
+                tuCheckbox = id; 
+                wdayTextField = id; 
+                weCheckbox = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                acceptButtonClicked = id; 
+                anyHourCheckboxClicked = id; 
+                anyMdayCheckboxClicked = id; 
+                anyMinuteCheckboxClicked = id; 
+                anyMonthCheckboxClicked = id; 
+                anyWdayCheckboxClicked = id; 
+                browseButtonClicked = id; 
+                cancelButtonClicked = id; 
+                openCheckboxClicked = id; 
+                sliderMoved = id; 
+                wdayCheckboxClicked = id; 
+            }; 
+            CLASS = TaskDialogController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                anyHourCheckbox = id; 
+                anyMdayCheckbox = id; 
+                anyMinuteCheckbox = id; 
+                anyMonthCheckbox = id; 
+                anyWdayCheckbox = id; 
+                browseButton = id; 
+                commandTextField = id; 
+                frCheckbox = id; 
+                hourSlider = id; 
+                hourTextField = id; 
+                mdaySlider = id; 
+                mdayTextField = id; 
+                minuteSlider = id; 
+                minuteTextField = id; 
+                moCheckbox = id; 
+                monthSlider = id; 
+                monthTextField = id; 
+                openCheckbox = id; 
+                saCheckbox = id; 
+                simpleHourTextField = id; 
+                simpleMdayTextField = id; 
+                simpleMinuteTextField = id; 
+                simpleMonthTextField = id; 
+                suCheckbox = id; 
+                submitButton = id; 
+                thCheckbox = id; 
+                tuCheckbox = id; 
+                wdayTextField = id; 
+                weCheckbox = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = "java.lang.Object"; LANGUAGE = Java; }
+    ); 
+    IBVersion = 1; 
+}

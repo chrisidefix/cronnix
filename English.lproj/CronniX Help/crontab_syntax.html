@@ -1,0 +1,70 @@
+<HTML>
+<head>
+<title>Crontab Syntax</title>
+</head>
+<body>
+
+<h2>Crontab Syntax</h2>
+
+<p>A crontab task consists of four date/time fields and a command field. Every minute <em>cron</em> checks all crontabs for a match between the current date/time and their tasks. If there's a match, the command is executed. The system crontab has an additional field "User" that tells cron with which user id the command should be executed.</p>
+
+<p>The fields are:</p>
+<TABLE>
+    <TR>
+        <TD width=80 valign=top>Min</TD>
+        <TD>minute of execution, 0-59</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Hour</TD>
+        <TD>hour of execution, 0-23</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Mday</TD>
+        <TD>day of month of execution, 1-31</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Month</TD>
+        <TD>month of execution, 1-12 (or names)</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Wday</TD>
+        <TD>day of week of execution, 0-7 (0 or 7 is sunday, or names)</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Command</TD>
+        <TD>Anything that can be launched from the command line</TD>
+    </TR>
+</TABLE>
+<P></P>Possible values:<BR>
+<TABLE>
+    <TR>
+        <TD width=40 valign=top>*</TD>
+        <TD>matches all values, e.g. a * in month means: &quot;every month&quot;</TD>
+    </TR>
+    <TR>
+        <TD valign=top>x-y</TD>
+        <TD>matches the range x to y, e.g. 2-4 in Mday means &quot;on the 2nd, 3rd, and 4th of the month&quot;</TD>
+    </TR>
+    <TR>
+        <TD valign=top>x/n</TD>
+        <TD>in range x with frequency n, e.g. */2 in Hour means &quot;every other hour&quot;</TD>
+    </TR>
+</TABLE>
+
+<P>Month also accepts names, e.g. jan, Feb (case insensitive). This does not support ranges, though.
+
+<p>Weekdays can also be given as names, e.g. sun, Mon.</P>
+
+<p>There are several special schedule shortcuts that CronniX does not support right now, e.g. @yearly, @daily, etc (see 'man 5 crontab' for details). All except one of these are just shortcuts. For example @daily equals '0 0 * * *'. The one tag different is @reboot.
+
+<p>I have neither confirmed if these tags (especially the @reboot) work, nor are they supported by CronniX at this time. I might add support for them in the future. It's mainly a problem of how to display them in the table view.
+
+<p>I am considering just to convert between the shortcuts and what they represent and use the long version when writing a crontab. This will effectively convert any shortcuts once they are parsed by CronniX. The 'Intervals' tab in the edit dialog (once it's implemented) will allow you to easily select these schedules anyway, so the feature is still available.
+
+<p>The @reboot does not fit in this scheme and short of providing an extra window or view or even extending the table view to allow a different number of columns for different rows for it I don't know how to handle it, yet.
+
+<hr>
+<a href="welcome.html" target=_right>Home</a>
+
+</BODY>
+</HTML>
