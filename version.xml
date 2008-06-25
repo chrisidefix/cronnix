@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/P
+ropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>Product</key>
+        <string>CronniX</string>
+		<key>Version</key>
+		<string>3.0b3</string>
+		<key>Changes</key>
+		<array>
+      <string>Fixed parsing bug: User column of system crontab was ignored</string>
+      <string>Fixed parsing bug: '=' sign in command string caused tasks to be read in a environment variables</string>
+      <string>Fixed display issue: Info text field was not updated after deletes</string>
+		</array>
+</dict>
+</plist>
