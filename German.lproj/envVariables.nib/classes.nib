@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {addLine = id; hideWindow = id; removeLine = id; }; 
+            CLASS = envVariablesNibController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {btRemove = id; envTable = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,1168 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXApplicationTarget section */
+		29B97326FDCFA39411CA2CEA /* CronniX */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = 5A1348FF0857416600909BFC /* Build configuration list for PBXApplicationTarget "CronniX" */;
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA /* Headers */,
+				29B97328FDCFA39411CA2CEA /* Resources */,
+				29B9732BFDCFA39411CA2CEA /* Sources */,
+				29B9732DFDCFA39411CA2CEA /* Frameworks */,
+				043355C9FE30361CC02AAC07 /* Rez */,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = CronniX;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			name = CronniX;
+			productInstallPath = "$(HOME)/Applications";
+			productName = CronniX;
+			productReference = 17587328FF379C6511CA2CBB /* CronniX.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>CronniX</string>
+	<key>CFBundleGetInfoString</key>
+	<string>3.0, Copyright 2004 abstracture IT-Beratung GmbH</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>CronniX Help</string>
+	<key>CFBundleHelpBookName</key>
+	<string>CronniX Help</string>
+	<key>CFBundleIconFile</key>
+	<string>cronnix_app.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>de.sas.CronniX</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>CronniX</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>3.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		010440D5FFD845870A00011E /* crController.h in Headers */ = {isa = PBXBuildFile; fileRef = 010440D3FFD845870A00011E /* crController.h */; };
+		01108E3EFFF7F751C0A8FC05 /* cronnix_app.icns in Resources */ = {isa = PBXBuildFile; fileRef = 01108E3DFFF7F751C0A8FC05 /* cronnix_app.icns */; };
+		0131485400AF26EA7F000001 /* sucrontab in Resources */ = {isa = PBXBuildFile; fileRef = 0131485300AF26EA7F000001 /* sucrontab */; };
+		013612D800D39F457F000001 /* UserImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 013612D600D39F457F000001 /* UserImageRep.h */; };
+		013612D900D39F457F000001 /* UserImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 013612D700D39F457F000001 /* UserImageRep.m */; };
+		013612DC00D3AC8D7F000001 /* Toolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 013612DA00D3AC8D7F000001 /* Toolbar.h */; };
+		013612DD00D3AC8D7F000001 /* Toolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 013612DB00D3AC8D7F000001 /* Toolbar.m */; };
+		015991F2FFF0D793865D81D7 /* LoadCrontabWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 015991F0FFF0D793865D81D7 /* LoadCrontabWindow.nib */; };
+		015991F5FFF0D958865D81D7 /* loadCrontabController.h in Headers */ = {isa = PBXBuildFile; fileRef = 015991F3FFF0D958865D81D7 /* loadCrontabController.h */; };
+		015991F6FFF0D958865D81D7 /* loadCrontabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015991F4FFF0D958865D81D7 /* loadCrontabController.m */; settings = {ATTRIBUTES = (); }; };
+		0648154800B6F26B7F000001 /* envVariables.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0648154600B6F26B7F000001 /* envVariables.nib */; };
+		0648154B00B6F30D7F000001 /* envVariablesNibController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0648154900B6F30D7F000001 /* envVariablesNibController.h */; };
+		0648154C00B6F30D7F000001 /* envVariablesNibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0648154A00B6F30D7F000001 /* envVariablesNibController.m */; };
+		07DAD5A7009712FC7F000001 /* BLAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 07DAD5A5009712FC7F000001 /* BLAuthentication.h */; };
+		07DAD5A8009712FC7F000001 /* BLAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAD5A6009712FC7F000001 /* BLAuthentication.m */; };
+		080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		0EE2ED5100D422B17F000001 /* UserImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE2ED4F00D422B17F000001 /* UserImageView.h */; };
+		0EE2ED5200D422B17F000001 /* UserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2ED5000D422B17F000001 /* UserImageView.m */; };
+		1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		1339977B00D50DD47F000001 /* user.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1339977A00D50DD47F000001 /* user.tiff */; };
+		1339977D00D512A97F000001 /* save.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1339977C00D512A97F000001 /* save.tiff */; };
+		152B666D00D185EB7F000001 /* delete.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 152B666C00D185EB7F000001 /* delete.tiff */; };
+		152B666F00D253437F000001 /* new.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 152B666E00D253437F000001 /* new.tiff */; };
+		29B9732CFDCFA39411CA2CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		5A180769061317760053BB44 /* EnvVariableTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A180767061317760053BB44 /* EnvVariableTest.h */; };
+		5A18076A061317760053BB44 /* EnvVariableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A180768061317760053BB44 /* EnvVariableTest.m */; };
+		5A5CA76B03DC238000000104 /* MockEnvVariablesNibController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A5CA76903DC238000000104 /* MockEnvVariablesNibController.h */; };
+		5A5CA76C03DC238000000104 /* MockEnvVariablesNibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CA76A03DC238000000104 /* MockEnvVariablesNibController.m */; };
+		5A662926062AAA0300D9243C /* CrontabLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A662925062AAA0300D9243C /* CrontabLine.h */; };
+		5A662927062AAA0300D9243C /* CrontabLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A662925062AAA0300D9243C /* CrontabLine.h */; };
+		5A66292A062AAA3500D9243C /* SimpleLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A662928062AAA3500D9243C /* SimpleLine.h */; };
+		5A66292B062AAA3500D9243C /* SimpleLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A662929062AAA3500D9243C /* SimpleLine.m */; };
+		5A66292C062AAA3500D9243C /* SimpleLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A662928062AAA3500D9243C /* SimpleLine.h */; };
+		5A66292D062AAA3500D9243C /* SimpleLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A662929062AAA3500D9243C /* SimpleLine.m */; };
+		5A662930062AAA5300D9243C /* UnparsedLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A66292E062AAA5300D9243C /* UnparsedLine.h */; };
+		5A662931062AAA5300D9243C /* UnparsedLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A66292F062AAA5300D9243C /* UnparsedLine.m */; };
+		5A662932062AAA5300D9243C /* UnparsedLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A66292E062AAA5300D9243C /* UnparsedLine.h */; };
+		5A662933062AAA5300D9243C /* UnparsedLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A66292F062AAA5300D9243C /* UnparsedLine.m */; };
+		5A72890106074BD700305534 /* EnvVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A7288FF06074BD700305534 /* EnvVariable.h */; };
+		5A72890206074BD700305534 /* EnvVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A72890006074BD700305534 /* EnvVariable.m */; };
+		5A72890306074BD700305534 /* EnvVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A7288FF06074BD700305534 /* EnvVariable.h */; };
+		5A72890406074BD700305534 /* EnvVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A72890006074BD700305534 /* EnvVariable.m */; };
+		5A72894F0607582A00305534 /* CommentLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A72894D0607582A00305534 /* CommentLine.h */; };
+		5A7289500607582A00305534 /* CommentLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A72894E0607582A00305534 /* CommentLine.m */; };
+		5A7289510607582A00305534 /* CommentLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A72894D0607582A00305534 /* CommentLine.h */; };
+		5A7289520607582A00305534 /* CommentLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A72894E0607582A00305534 /* CommentLine.m */; };
+		5A728AB806075FF800305534 /* SasStringTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A728AB606075FF800305534 /* SasStringTest.h */; };
+		5A728AB906075FF800305534 /* SasStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A728AB706075FF800305534 /* SasStringTest.m */; };
+		5A7507C405E108D700C9DB00 /* ObjcUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7507C305E108D700C9DB00 /* ObjcUnit.framework */; };
+		5A8AD8CB085ADFC000B62B1F /* CronniX Help in Resources */ = {isa = PBXBuildFile; fileRef = 5A8AD8B7085ADFC000B62B1F /* CronniX Help */; };
+		5A9817D703C741FF00000104 /* SasString.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9817D503C741FF00000104 /* SasString.h */; };
+		5A9817D803C741FF00000104 /* SasString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9817D603C741FF00000104 /* SasString.m */; };
+		5AA0AC6906076E6200E677F6 /* SasString.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9817D503C741FF00000104 /* SasString.h */; };
+		5AA0AC7006076E6500E677F6 /* SasString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9817D603C741FF00000104 /* SasString.m */; };
+		5ABC66DC03D46CCA00000104 /* TaskDialogController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEA529603C87DD600000104 /* TaskDialogController.h */; };
+		5ABC66DD03D46CCA00000104 /* TaskDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA529703C87DD600000104 /* TaskDialogController.m */; };
+		5ABC66DE03D46CCB00000104 /* EditTaskDialogController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEA529D03C886CB00000104 /* EditTaskDialogController.h */; };
+		5ABC66DF03D46CCB00000104 /* EditTaskDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA529E03C886CB00000104 /* EditTaskDialogController.m */; };
+		5AC77FF10624869D004BBB50 /* CrInfoCommentLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC77FEF0624869D004BBB50 /* CrInfoCommentLine.h */; };
+		5AC77FF20624869D004BBB50 /* CrInfoCommentLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC77FF00624869D004BBB50 /* CrInfoCommentLine.m */; };
+		5AC77FF30624869D004BBB50 /* CrInfoCommentLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC77FEF0624869D004BBB50 /* CrInfoCommentLine.h */; };
+		5AC77FF40624869D004BBB50 /* CrInfoCommentLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC77FF00624869D004BBB50 /* CrInfoCommentLine.m */; };
+		5AD2E94503DB840F00000104 /* crControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ECDCB9024D4ADA0100011A /* crControllerTest.m */; };
+		5AD2E94603DB841000000104 /* crControllerTest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5ECDCB8024D4ADA0100011A /* crControllerTest.h */; };
+		5AEA4EC903C8588200000104 /* edit.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA4EC803C8588200000104 /* edit.tiff */; };
+		5AEA529803C87DD600000104 /* TaskDialogController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEA529603C87DD600000104 /* TaskDialogController.h */; };
+		5AEA529903C87DD600000104 /* TaskDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA529703C87DD600000104 /* TaskDialogController.m */; };
+		5AEA529C03C8862500000104 /* TaskDialog.nib in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA529A03C8862500000104 /* TaskDialog.nib */; };
+		5AEA529F03C886CB00000104 /* EditTaskDialogController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEA529D03C886CB00000104 /* EditTaskDialogController.h */; };
+		5AEA52A003C886CB00000104 /* EditTaskDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA529E03C886CB00000104 /* EditTaskDialogController.m */; };
+		F50206F10178B63F01BF658F /* crController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010440D4FFD845870A00011E /* crController.m */; };
+		F53AE208019C04BF01000102 /* MyTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F53AE206019C04BF01000102 /* MyTableView.h */; };
+		F53AE209019C04BF01000102 /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53AE207019C04BF01000102 /* MyTableView.m */; };
+		F53D5B7101DFA9C201000103 /* NewTaskDialogController.h in Headers */ = {isa = PBXBuildFile; fileRef = F53D5B6E01DFA9C101000103 /* NewTaskDialogController.h */; };
+		F53D5B7301DFA9C201000103 /* NewTaskDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D5B6F01DFA9C101000103 /* NewTaskDialogController.m */; };
+		F53D5B7C01E0800001000103 /* TaskObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F53D5B7A01E0800001000103 /* TaskObject.h */; };
+		F53D5B7D01E0800001000103 /* TaskObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D5B7B01E0800001000103 /* TaskObject.m */; };
+		F5420F050153960D01A8FC02 /* SwitchFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F5420F030153960D01A8FC02 /* SwitchFormatter.h */; };
+		F5420F060153960D01A8FC02 /* SwitchFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5420F040153960D01A8FC02 /* SwitchFormatter.m */; };
+		F55E28A9011B0E3101000001 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F55E28A7011B0E3101000001 /* Localizable.strings */; };
+		F584C892015E94BD01000001 /* runNowPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = F584C890015E94BD01000001 /* runNowPanel.nib */; };
+		F584C895015E96A601000001 /* RunNowNibController.h in Headers */ = {isa = PBXBuildFile; fileRef = F584C894015E96A601000001 /* RunNowNibController.h */; };
+		F584C896015E96A601000001 /* RunNowNibController.m in Sources */ = {isa = PBXBuildFile; fileRef = F584C893015E96A601000001 /* RunNowNibController.m */; };
+		F591D44400E50BA901000001 /* new_env.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F591D44300E50BA901000001 /* new_env.tiff */; };
+		F594C0E7024772DB01000110 /* runnow.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F594C0E6024772DB01000110 /* runnow.tiff */; };
+		F59CC2BE016B090B0176C965 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59CC2BD016B090B0176C965 /* Security.framework */; };
+		F5AC0A5701F5BBE801000133 /* Crontab.h in Headers */ = {isa = PBXBuildFile; fileRef = F5AC0A5501F5BBE801000133 /* Crontab.h */; };
+		F5AC0A5801F5BBE801000133 /* Crontab.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC0A5601F5BBE801000133 /* Crontab.m */; };
+		F5ECDC92024CC0900100011A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F5ECDC95024CC1100100011A /* test_main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ECDC94024CC1100100011A /* test_main.m */; };
+		F5ECDC98024CC1950100011A /* AllTests.h in Headers */ = {isa = PBXBuildFile; fileRef = F5ECDC96024CC1940100011A /* AllTests.h */; };
+		F5ECDC99024CC1950100011A /* AllTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ECDC97024CC1940100011A /* AllTests.m */; };
+		F5ECDCAA024CD5680100011A /* CrontabTest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5ECDCA8024CD5680100011A /* CrontabTest.h */; };
+		F5ECDCAB024CD5680100011A /* CrontabTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ECDCA9024CD5680100011A /* CrontabTest.m */; };
+		F5ECDCAC024CDCFB0100011A /* Crontab.h in Headers */ = {isa = PBXBuildFile; fileRef = F5AC0A5501F5BBE801000133 /* Crontab.h */; };
+		F5ECDCAD024CDCFB0100011A /* Crontab.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC0A5601F5BBE801000133 /* Crontab.m */; };
+		F5ECDCAE024CDD240100011A /* TaskObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F53D5B7A01E0800001000103 /* TaskObject.h */; };
+		F5ECDCAF024CDD240100011A /* TaskObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D5B7B01E0800001000103 /* TaskObject.m */; };
+		F5ECDCB3024D3D920100011A /* TaskObjectTest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5ECDCB1024D3D920100011A /* TaskObjectTest.h */; };
+		F5ECDCB4024D3D920100011A /* TaskObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ECDCB2024D3D920100011A /* TaskObjectTest.m */; };
+		F5ECDCB6024D4AB70100011A /* crController.h in Headers */ = {isa = PBXBuildFile; fileRef = 010440D3FFD845870A00011E /* crController.h */; };
+		F5ECDCB7024D4AB70100011A /* crController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010440D4FFD845870A00011E /* crController.m */; };
+		F5ECDCBC024D4F370100011A /* BLAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 07DAD5A5009712FC7F000001 /* BLAuthentication.h */; };
+		F5ECDCBD024D4F370100011A /* BLAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAD5A6009712FC7F000001 /* BLAuthentication.m */; };
+		F5ECDCBE024D4F540100011A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59CC2BD016B090B0176C965 /* Security.framework */; };
+		F5ECDCBF024D4F610100011A /* SwitchFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F5420F030153960D01A8FC02 /* SwitchFormatter.h */; };
+		F5ECDCC0024D4F610100011A /* SwitchFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5420F040153960D01A8FC02 /* SwitchFormatter.m */; };
+		F5ECDCC1024D4F6E0100011A /* Toolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 013612DA00D3AC8D7F000001 /* Toolbar.h */; };
+		F5ECDCC2024D4F6E0100011A /* Toolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 013612DB00D3AC8D7F000001 /* Toolbar.m */; };
+		F5ECDCC3024D4F7A0100011A /* NewTaskDialogController.h in Headers */ = {isa = PBXBuildFile; fileRef = F53D5B6E01DFA9C101000103 /* NewTaskDialogController.h */; };
+		F5ECDCC4024D4F7A0100011A /* NewTaskDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D5B6F01DFA9C101000103 /* NewTaskDialogController.m */; };
+		F5ECDCC7024D4F970100011A /* loadCrontabController.h in Headers */ = {isa = PBXBuildFile; fileRef = 015991F3FFF0D958865D81D7 /* loadCrontabController.h */; };
+		F5ECDCC8024D4F970100011A /* loadCrontabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015991F4FFF0D958865D81D7 /* loadCrontabController.m */; };
+		F5ECDCC9024D4FAA0100011A /* UserImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE2ED4F00D422B17F000001 /* UserImageView.h */; };
+		F5ECDCCA024D4FAA0100011A /* UserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2ED5000D422B17F000001 /* UserImageView.m */; };
+		F5ECDCCB024D4FB60100011A /* RunNowNibController.h in Headers */ = {isa = PBXBuildFile; fileRef = F584C894015E96A601000001 /* RunNowNibController.h */; };
+		F5ECDCCC024D4FB60100011A /* RunNowNibController.m in Sources */ = {isa = PBXBuildFile; fileRef = F584C893015E96A601000001 /* RunNowNibController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		00FC83E2006171A07F000001 /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		00FC83E3006171A07F000001 /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXFileReference section */
+		010440D3FFD845870A00011E /* crController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = crController.h; sourceTree = "<group>"; };
+		010440D4FFD845870A00011E /* crController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = crController.m; sourceTree = "<group>"; };
+		01108E3DFFF7F751C0A8FC05 /* cronnix_app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = cronnix_app.icns; sourceTree = "<group>"; };
+		0131485300AF26EA7F000001 /* sucrontab */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sucrontab; sourceTree = "<group>"; };
+		013612D600D39F457F000001 /* UserImageRep.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UserImageRep.h; sourceTree = "<group>"; };
+		013612D700D39F457F000001 /* UserImageRep.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UserImageRep.m; sourceTree = "<group>"; };
+		013612DA00D3AC8D7F000001 /* Toolbar.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Toolbar.h; sourceTree = "<group>"; };
+		013612DB00D3AC8D7F000001 /* Toolbar.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Toolbar.m; sourceTree = "<group>"; };
+		015991F1FFF0D793865D81D7 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		015991F3FFF0D958865D81D7 /* loadCrontabController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = loadCrontabController.h; sourceTree = "<group>"; };
+		015991F4FFF0D958865D81D7 /* loadCrontabController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = loadCrontabController.m; sourceTree = "<group>"; };
+		0648154700B6F26B7F000001 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/envVariables.nib; sourceTree = "<group>"; };
+		0648154900B6F30D7F000001 /* envVariablesNibController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = envVariablesNibController.h; sourceTree = "<group>"; };
+		0648154A00B6F30D7F000001 /* envVariablesNibController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = envVariablesNibController.m; sourceTree = "<group>"; };
+		07DAD5A5009712FC7F000001 /* BLAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BLAuthentication.h; sourceTree = "<group>"; };
+		07DAD5A6009712FC7F000001 /* BLAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = BLAuthentication.m; sourceTree = "<group>"; };
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0EE2ED4F00D422B17F000001 /* UserImageView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UserImageView.h; sourceTree = "<group>"; };
+		0EE2ED5000D422B17F000001 /* UserImageView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UserImageView.m; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1339977A00D50DD47F000001 /* user.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = user.tiff; sourceTree = "<group>"; };
+		1339977C00D512A97F000001 /* save.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = save.tiff; sourceTree = "<group>"; };
+		152B666C00D185EB7F000001 /* delete.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = delete.tiff; sourceTree = "<group>"; };
+		152B666E00D253437F000001 /* new.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = new.tiff; sourceTree = "<group>"; };
+		17587328FF379C6511CA2CBB /* CronniX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = CronniX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5A0619C207183E270032DBB1 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A0619C307183E4A0032DBB1 /* Portuguese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Portuguese; path = Portuguese.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A0619C407183E520032DBB1 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A0619C507183E570032DBB1 /* Welsh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Welsh; path = Welsh.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A167EA6072D80E90077CB3A /* make_release.sh */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text.script.sh; path = make_release.sh; sourceTree = "<group>"; };
+		5A180767061317760053BB44 /* EnvVariableTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvVariableTest.h; sourceTree = "<group>"; };
+		5A180768061317760053BB44 /* EnvVariableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvVariableTest.m; sourceTree = "<group>"; };
+		5A1B75AB03C5D54C00000104 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		5A1B75AC03C5D5E400000104 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		5A1B75AD03C5D60700000104 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/envVariables.nib; sourceTree = "<group>"; };
+		5A1B75AE03C5D6D300000104 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		5A1B75AF03C5D6DE00000104 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		5A1B75B003C5D6E900000104 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		5A1B75B803C5D8AF00000104 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A24D09D03D2C8BA00000104 /* version.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = version.xml; sourceTree = "<group>"; };
+		5A28880E04763B4200000104 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Swedish; path = Swedish.lproj/envVariables.nib; sourceTree = "<group>"; };
+		5A28880F04763B5300000104 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Swedish; path = Swedish.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		5A28881004763B5C00000104 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Swedish; path = Swedish.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		5A28881104763B6400000104 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Swedish; path = Swedish.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		5A28881204763B6E00000104 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Swedish; path = Swedish.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5A28881304763B7700000104 /* Swedish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Swedish; path = Swedish.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A47A99B03DCB3E000000104 /* getVersion.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = getVersion.py; sourceTree = "<group>"; };
+		5A5544E407149E5A00C3864D /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Dutch; path = Dutch.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		5A5544F807149E7400C3864D /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Dutch; path = Dutch.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		5A5544F907149E8500C3864D /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Dutch; path = Dutch.lproj/envVariables.nib; sourceTree = "<group>"; };
+		5A5544FA07149E9500C3864D /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Dutch; path = Dutch.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		5A5544FB07149EA300C3864D /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Dutch; path = Dutch.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5A55450F07149ED800C3864D /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5A55452307149EF600C3864D /* Portuguese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Portuguese; path = Portuguese.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5A55453707149F1600C3864D /* Welsh */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Welsh; path = Welsh.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5A55454B07149F3600C3864D /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5A55455F07149FC800C3864D /* Welsh */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Welsh; path = Welsh.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		5A55456007149FD300C3864D /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		5A55456107149FE800C3864D /* Portuguese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Portuguese; path = Portuguese.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		5A55456207149FFB00C3864D /* Portuguese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Portuguese; path = Portuguese.lproj/envVariables.nib; sourceTree = "<group>"; };
+		5A5545630714A00200C3864D /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/envVariables.nib; sourceTree = "<group>"; };
+		5A5545640714A00B00C3864D /* Welsh */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Welsh; path = Welsh.lproj/envVariables.nib; sourceTree = "<group>"; };
+		5A5545650714A01F00C3864D /* Portuguese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Portuguese; path = Portuguese.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		5A5545660714A02400C3864D /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		5A5545670714A02800C3864D /* Welsh */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Welsh; path = Welsh.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		5A5545680714A03A00C3864D /* Portuguese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Portuguese; path = Portuguese.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		5A5545690714A04500C3864D /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		5A55456A0714A04A00C3864D /* Welsh */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Welsh; path = Welsh.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		5A565B7F03F5D38300000104 /* changes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changes.txt; sourceTree = "<group>"; };
+		5A57A6EC03E177A800000104 /* nibUpdate.sh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; name = nibUpdate.sh; path = CronniX_Localization/nibUpdate.sh; sourceTree = "<group>"; };
+		5A57A6ED03E177B300000104 /* compareStrings.py */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.python; name = compareStrings.py; path = CronniX_Localization/compareStrings.py; sourceTree = "<group>"; };
+		5A5CA76903DC238000000104 /* MockEnvVariablesNibController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockEnvVariablesNibController.h; sourceTree = "<group>"; };
+		5A5CA76A03DC238000000104 /* MockEnvVariablesNibController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockEnvVariablesNibController.m; sourceTree = "<group>"; };
+		5A662925062AAA0300D9243C /* CrontabLine.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = CrontabLine.h; sourceTree = "<group>"; };
+		5A662928062AAA3500D9243C /* SimpleLine.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = SimpleLine.h; sourceTree = "<group>"; };
+		5A662929062AAA3500D9243C /* SimpleLine.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = SimpleLine.m; sourceTree = "<group>"; };
+		5A66292E062AAA5300D9243C /* UnparsedLine.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = UnparsedLine.h; sourceTree = "<group>"; };
+		5A66292F062AAA5300D9243C /* UnparsedLine.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = UnparsedLine.m; sourceTree = "<group>"; };
+		5A7288FF06074BD700305534 /* EnvVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvVariable.h; sourceTree = "<group>"; };
+		5A72890006074BD700305534 /* EnvVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvVariable.m; sourceTree = "<group>"; };
+		5A72894D0607582A00305534 /* CommentLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentLine.h; sourceTree = "<group>"; };
+		5A72894E0607582A00305534 /* CommentLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentLine.m; sourceTree = "<group>"; };
+		5A728AB606075FF800305534 /* SasStringTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SasStringTest.h; sourceTree = "<group>"; };
+		5A728AB706075FF800305534 /* SasStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SasStringTest.m; sourceTree = "<group>"; };
+		5A7507C305E108D700C9DB00 /* ObjcUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcUnit.framework; path = /Library/Frameworks/ObjcUnit.framework; sourceTree = "<absolute>"; };
+		5A8AD560085AD3D200B62B1F /* Danish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Danish; path = Danish.lproj/envVariables.nib; sourceTree = "<group>"; };
+		5A8AD563085AD3F600B62B1F /* Danish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Danish; path = Danish.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		5A8AD566085AD40300B62B1F /* Danish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Danish; path = Danish.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A8AD569085AD41100B62B1F /* Danish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Danish; path = Danish.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		5A8AD56C085AD42000B62B1F /* Danish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Danish; path = Danish.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		5A8AD56F085AD42F00B62B1F /* Danish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Danish; path = Danish.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5A8AD580085AD59400B62B1F /* Catalan */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Catalan; path = Catalan.lproj/envVariables.nib; sourceTree = "<group>"; };
+		5A8AD583085AD5A000B62B1F /* Catalan */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Catalan; path = Catalan.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		5A8AD586085AD5D000B62B1F /* Catalan */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Catalan; path = Catalan.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A8AD589085AD5DA00B62B1F /* Catalan */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Catalan; path = Catalan.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		5A8AD58C085AD5E700B62B1F /* Catalan */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Catalan; path = Catalan.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		5A8AD58F085AD5F100B62B1F /* Catalan */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Catalan; path = Catalan.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5A8AD8B8085ADFC000B62B1F /* English */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English; path = "English.lproj/CronniX Help"; sourceTree = "<group>"; };
+		5A8AD8CE085ADFC900B62B1F /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Dutch; path = "Dutch.lproj/CronniX Help"; sourceTree = "<group>"; };
+		5A8AD8F3085ADFCE00B62B1F /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Japanese; path = "Japanese.lproj/CronniX Help"; sourceTree = "<group>"; };
+		5A8B53AC041E060B00000104 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5A8B53AD041E06E000000104 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5A8B53AE041E06EC00000104 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5A9817D503C741FF00000104 /* SasString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SasString.h; sourceTree = "<group>"; };
+		5A9817D603C741FF00000104 /* SasString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SasString.m; sourceTree = "<group>"; };
+		5AC77FEF0624869D004BBB50 /* CrInfoCommentLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrInfoCommentLine.h; sourceTree = "<group>"; };
+		5AC77FF00624869D004BBB50 /* CrInfoCommentLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrInfoCommentLine.m; sourceTree = "<group>"; };
+		5ACBB10503DB2BA900000104 /* createImage.sh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = createImage.sh; sourceTree = "<group>"; };
+		5AEA4EC803C8588200000104 /* edit.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = edit.tiff; sourceTree = "<group>"; };
+		5AEA529603C87DD600000104 /* TaskDialogController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TaskDialogController.h; sourceTree = "<group>"; };
+		5AEA529703C87DD600000104 /* TaskDialogController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TaskDialogController.m; sourceTree = "<group>"; };
+		5AEA529B03C8862500000104 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/TaskDialog.nib; sourceTree = "<group>"; };
+		5AEA529D03C886CB00000104 /* EditTaskDialogController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = EditTaskDialogController.h; sourceTree = "<group>"; };
+		5AEA529E03C886CB00000104 /* EditTaskDialogController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = EditTaskDialogController.m; sourceTree = "<group>"; };
+		F53AE206019C04BF01000102 /* MyTableView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyTableView.h; sourceTree = "<group>"; };
+		F53AE207019C04BF01000102 /* MyTableView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyTableView.m; sourceTree = "<group>"; };
+		F53AE20D019C524D01000102 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F53AE20E019C524D01000102 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		F53AE210019C524D01000102 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/envVariables.nib; sourceTree = "<group>"; };
+		F53AE211019C524D01000102 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F53AE212019C524D01000102 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		F53D5B6E01DFA9C101000103 /* NewTaskDialogController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NewTaskDialogController.h; sourceTree = "<group>"; };
+		F53D5B6F01DFA9C101000103 /* NewTaskDialogController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NewTaskDialogController.m; sourceTree = "<group>"; };
+		F53D5B7A01E0800001000103 /* TaskObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TaskObject.h; sourceTree = "<group>"; };
+		F53D5B7B01E0800001000103 /* TaskObject.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TaskObject.m; sourceTree = "<group>"; };
+		F5420F030153960D01A8FC02 /* SwitchFormatter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SwitchFormatter.h; sourceTree = "<group>"; };
+		F5420F040153960D01A8FC02 /* SwitchFormatter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SwitchFormatter.m; sourceTree = "<group>"; };
+		F55E28A8011B0E3101000001 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F56A0A370126B3C101000001 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		F56A0A380126B68B01000001 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F56A0A3A0126B68B01000001 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/envVariables.nib; sourceTree = "<group>"; };
+		F584C88B015E2F1601000001 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F584C88C015E2F1601000001 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/LoadCrontabWindow.nib; sourceTree = "<group>"; };
+		F584C88E015E2F1601000001 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/envVariables.nib; sourceTree = "<group>"; };
+		F584C88F015E2F2D01000001 /* French */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F584C891015E94BD01000001 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/runNowPanel.nib; sourceTree = "<group>"; };
+		F584C893015E96A601000001 /* RunNowNibController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = RunNowNibController.m; sourceTree = "<group>"; };
+		F584C894015E96A601000001 /* RunNowNibController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RunNowNibController.h; sourceTree = "<group>"; };
+		F591D44300E50BA901000001 /* new_env.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = new_env.tiff; sourceTree = "<group>"; };
+		F594C0E6024772DB01000110 /* runnow.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = runnow.tiff; sourceTree = "<group>"; };
+		F59CC2BD016B090B0176C965 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		F5AC0A5501F5BBE801000133 /* Crontab.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Crontab.h; sourceTree = "<group>"; };
+		F5AC0A5601F5BBE801000133 /* Crontab.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Crontab.m; sourceTree = "<group>"; };
+		F5D9AF00011B36A201000001 /* German */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5ECDC89024CC0250100011A /* All Tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "All Tests"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5ECDC94024CC1100100011A /* test_main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = test_main.m; sourceTree = "<group>"; };
+		F5ECDC96024CC1940100011A /* AllTests.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AllTests.h; sourceTree = "<group>"; };
+		F5ECDC97024CC1940100011A /* AllTests.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AllTests.m; sourceTree = "<group>"; };
+		F5ECDCA8024CD5680100011A /* CrontabTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CrontabTest.h; sourceTree = "<group>"; };
+		F5ECDCA9024CD5680100011A /* CrontabTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CrontabTest.m; sourceTree = "<group>"; };
+		F5ECDCB1024D3D920100011A /* TaskObjectTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TaskObjectTest.h; sourceTree = "<group>"; };
+		F5ECDCB2024D3D920100011A /* TaskObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TaskObjectTest.m; sourceTree = "<group>"; };
+		F5ECDCB8024D4ADA0100011A /* crControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = crControllerTest.h; sourceTree = "<group>"; };
+		F5ECDCB9024D4ADA0100011A /* crControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = crControllerTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B9732DFDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */,
+				F59CC2BE016B090B0176C965 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECDC8D024CC0250100011A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ECDC92024CC0900100011A /* Cocoa.framework in Frameworks */,
+				F5ECDCBE024D4F540100011A /* Security.framework in Frameworks */,
+				5A7507C405E108D700C9DB00 /* ObjcUnit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A7507C305E108D700C9DB00 /* ObjcUnit.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				F59CC2BD016B090B0176C965 /* Security.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17587328FF379C6511CA2CBB /* CronniX.app */,
+				F5ECDC89024CC0250100011A /* All Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CronniX objc */ = {
+			isa = PBXGroup;
+			children = (
+				010440D3FFD845870A00011E /* crController.h */,
+				010440D4FFD845870A00011E /* crController.m */,
+				5AEA529303C87C7C00000104 /* Dialogs */,
+				5AEA529403C87CBE00000104 /* Datamodel */,
+				5AEA529503C87D0600000104 /* Helper */,
+				F5ECDC93024CC0C30100011A /* Tests */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "CronniX objc";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A8AD8B7085ADFC000B62B1F /* CronniX Help */,
+				5A24D09D03D2C8BA00000104 /* version.xml */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				0131485300AF26EA7F000001 /* sucrontab */,
+				F55E28A7011B0E3101000001 /* Localizable.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				015991F0FFF0D793865D81D7 /* LoadCrontabWindow.nib */,
+				0648154600B6F26B7F000001 /* envVariables.nib */,
+				F584C890015E94BD01000001 /* runNowPanel.nib */,
+				5AEA529A03C8862500000104 /* TaskDialog.nib */,
+				5A2D6FE00717F14500810FE7 /* Images */,
+				5A57A6EE03E177C400000104 /* Tools */,
+				5A565B7F03F5D38300000104 /* changes.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A2D6FE00717F14500810FE7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F591D44300E50BA901000001 /* new_env.tiff */,
+				152B666C00D185EB7F000001 /* delete.tiff */,
+				152B666E00D253437F000001 /* new.tiff */,
+				1339977C00D512A97F000001 /* save.tiff */,
+				1339977A00D50DD47F000001 /* user.tiff */,
+				F594C0E6024772DB01000110 /* runnow.tiff */,
+				01108E3DFFF7F751C0A8FC05 /* cronnix_app.icns */,
+				5AEA4EC803C8588200000104 /* edit.tiff */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		5A57A6EE03E177C400000104 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5A167EA6072D80E90077CB3A /* make_release.sh */,
+				5ACBB10503DB2BA900000104 /* createImage.sh */,
+				5A47A99B03DCB3E000000104 /* getVersion.py */,
+				5A57A6EC03E177A800000104 /* nibUpdate.sh */,
+				5A57A6ED03E177B300000104 /* compareStrings.py */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		5AEA529303C87C7C00000104 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				F584C894015E96A601000001 /* RunNowNibController.h */,
+				F584C893015E96A601000001 /* RunNowNibController.m */,
+				015991F3FFF0D958865D81D7 /* loadCrontabController.h */,
+				015991F4FFF0D958865D81D7 /* loadCrontabController.m */,
+				0648154900B6F30D7F000001 /* envVariablesNibController.h */,
+				0648154A00B6F30D7F000001 /* envVariablesNibController.m */,
+				5AEA529603C87DD600000104 /* TaskDialogController.h */,
+				5AEA529703C87DD600000104 /* TaskDialogController.m */,
+				5AEA529D03C886CB00000104 /* EditTaskDialogController.h */,
+				5AEA529E03C886CB00000104 /* EditTaskDialogController.m */,
+				F53D5B6E01DFA9C101000103 /* NewTaskDialogController.h */,
+				F53D5B6F01DFA9C101000103 /* NewTaskDialogController.m */,
+			);
+			name = Dialogs;
+			sourceTree = "<group>";
+		};
+		5AEA529403C87CBE00000104 /* Datamodel */ = {
+			isa = PBXGroup;
+			children = (
+				5A66292E062AAA5300D9243C /* UnparsedLine.h */,
+				5A66292F062AAA5300D9243C /* UnparsedLine.m */,
+				5A662928062AAA3500D9243C /* SimpleLine.h */,
+				5A662929062AAA3500D9243C /* SimpleLine.m */,
+				5A662925062AAA0300D9243C /* CrontabLine.h */,
+				F53D5B7A01E0800001000103 /* TaskObject.h */,
+				F53D5B7B01E0800001000103 /* TaskObject.m */,
+				F5AC0A5501F5BBE801000133 /* Crontab.h */,
+				F5AC0A5601F5BBE801000133 /* Crontab.m */,
+				5A7288FF06074BD700305534 /* EnvVariable.h */,
+				5A72890006074BD700305534 /* EnvVariable.m */,
+				5A72894D0607582A00305534 /* CommentLine.h */,
+				5A72894E0607582A00305534 /* CommentLine.m */,
+				5AC77FEF0624869D004BBB50 /* CrInfoCommentLine.h */,
+				5AC77FF00624869D004BBB50 /* CrInfoCommentLine.m */,
+			);
+			name = Datamodel;
+			sourceTree = "<group>";
+		};
+		5AEA529503C87D0600000104 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				07DAD5A5009712FC7F000001 /* BLAuthentication.h */,
+				07DAD5A6009712FC7F000001 /* BLAuthentication.m */,
+				013612D600D39F457F000001 /* UserImageRep.h */,
+				013612D700D39F457F000001 /* UserImageRep.m */,
+				0EE2ED4F00D422B17F000001 /* UserImageView.h */,
+				0EE2ED5000D422B17F000001 /* UserImageView.m */,
+				F5420F030153960D01A8FC02 /* SwitchFormatter.h */,
+				F5420F040153960D01A8FC02 /* SwitchFormatter.m */,
+				F53AE206019C04BF01000102 /* MyTableView.h */,
+				F53AE207019C04BF01000102 /* MyTableView.m */,
+				5A9817D503C741FF00000104 /* SasString.h */,
+				5A9817D603C741FF00000104 /* SasString.m */,
+				013612DA00D3AC8D7F000001 /* Toolbar.h */,
+				013612DB00D3AC8D7F000001 /* Toolbar.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		F5ECDC93024CC0C30100011A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F5ECDC94024CC1100100011A /* test_main.m */,
+				F5ECDC96024CC1940100011A /* AllTests.h */,
+				F5ECDC97024CC1940100011A /* AllTests.m */,
+				F5ECDCA8024CD5680100011A /* CrontabTest.h */,
+				F5ECDCA9024CD5680100011A /* CrontabTest.m */,
+				F5ECDCB1024D3D920100011A /* TaskObjectTest.h */,
+				F5ECDCB2024D3D920100011A /* TaskObjectTest.m */,
+				F5ECDCB8024D4ADA0100011A /* crControllerTest.h */,
+				F5ECDCB9024D4ADA0100011A /* crControllerTest.m */,
+				5A5CA76903DC238000000104 /* MockEnvVariablesNibController.h */,
+				5A5CA76A03DC238000000104 /* MockEnvVariablesNibController.m */,
+				5A728AB606075FF800305534 /* SasStringTest.h */,
+				5A728AB706075FF800305534 /* SasStringTest.m */,
+				5A180767061317760053BB44 /* EnvVariableTest.h */,
+				5A180768061317760053BB44 /* EnvVariableTest.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29B97327FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010440D5FFD845870A00011E /* crController.h in Headers */,
+				015991F5FFF0D958865D81D7 /* loadCrontabController.h in Headers */,
+				07DAD5A7009712FC7F000001 /* BLAuthentication.h in Headers */,
+				0648154B00B6F30D7F000001 /* envVariablesNibController.h in Headers */,
+				013612D800D39F457F000001 /* UserImageRep.h in Headers */,
+				013612DC00D3AC8D7F000001 /* Toolbar.h in Headers */,
+				0EE2ED5100D422B17F000001 /* UserImageView.h in Headers */,
+				F5420F050153960D01A8FC02 /* SwitchFormatter.h in Headers */,
+				F584C895015E96A601000001 /* RunNowNibController.h in Headers */,
+				F53AE208019C04BF01000102 /* MyTableView.h in Headers */,
+				F53D5B7101DFA9C201000103 /* NewTaskDialogController.h in Headers */,
+				F53D5B7C01E0800001000103 /* TaskObject.h in Headers */,
+				F5AC0A5701F5BBE801000133 /* Crontab.h in Headers */,
+				5A9817D703C741FF00000104 /* SasString.h in Headers */,
+				5AEA529803C87DD600000104 /* TaskDialogController.h in Headers */,
+				5AEA529F03C886CB00000104 /* EditTaskDialogController.h in Headers */,
+				5A72890106074BD700305534 /* EnvVariable.h in Headers */,
+				5A72894F0607582A00305534 /* CommentLine.h in Headers */,
+				5AC77FF30624869D004BBB50 /* CrInfoCommentLine.h in Headers */,
+				5A662927062AAA0300D9243C /* CrontabLine.h in Headers */,
+				5A66292C062AAA3500D9243C /* SimpleLine.h in Headers */,
+				5A662932062AAA5300D9243C /* UnparsedLine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECDC8B024CC0250100011A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ECDC98024CC1950100011A /* AllTests.h in Headers */,
+				F5ECDCAA024CD5680100011A /* CrontabTest.h in Headers */,
+				F5ECDCAC024CDCFB0100011A /* Crontab.h in Headers */,
+				F5ECDCAE024CDD240100011A /* TaskObject.h in Headers */,
+				F5ECDCB3024D3D920100011A /* TaskObjectTest.h in Headers */,
+				F5ECDCB6024D4AB70100011A /* crController.h in Headers */,
+				F5ECDCBC024D4F370100011A /* BLAuthentication.h in Headers */,
+				F5ECDCBF024D4F610100011A /* SwitchFormatter.h in Headers */,
+				F5ECDCC1024D4F6E0100011A /* Toolbar.h in Headers */,
+				F5ECDCC3024D4F7A0100011A /* NewTaskDialogController.h in Headers */,
+				F5ECDCC7024D4F970100011A /* loadCrontabController.h in Headers */,
+				F5ECDCC9024D4FAA0100011A /* UserImageView.h in Headers */,
+				F5ECDCCB024D4FB60100011A /* RunNowNibController.h in Headers */,
+				5ABC66DC03D46CCA00000104 /* TaskDialogController.h in Headers */,
+				5ABC66DE03D46CCB00000104 /* EditTaskDialogController.h in Headers */,
+				5AD2E94603DB841000000104 /* crControllerTest.h in Headers */,
+				5A5CA76B03DC238000000104 /* MockEnvVariablesNibController.h in Headers */,
+				5A72890306074BD700305534 /* EnvVariable.h in Headers */,
+				5A7289510607582A00305534 /* CommentLine.h in Headers */,
+				5A728AB806075FF800305534 /* SasStringTest.h in Headers */,
+				5AA0AC6906076E6200E677F6 /* SasString.h in Headers */,
+				5A180769061317760053BB44 /* EnvVariableTest.h in Headers */,
+				5AC77FF10624869D004BBB50 /* CrInfoCommentLine.h in Headers */,
+				5A662926062AAA0300D9243C /* CrontabLine.h in Headers */,
+				5A66292A062AAA3500D9243C /* SimpleLine.h in Headers */,
+				5A662930062AAA5300D9243C /* UnparsedLine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5A1349070857416700909BFC /* Build configuration list for PBXProject "CronniX" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				00FC83E2006171A07F000001 /* Development */,
+				00FC83E3006171A07F000001 /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Spanish,
+				Italian,
+				Swedish,
+				Welsh,
+				Dutch,
+				Portuguese,
+				Danish,
+				Catalan,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CronniX objc */;
+			projectDirPath = "";
+			targets = (
+				29B97326FDCFA39411CA2CEA /* CronniX */,
+				F5ECDC8A024CC0250100011A /* CronniXTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29B97328FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */,
+				015991F2FFF0D793865D81D7 /* LoadCrontabWindow.nib in Resources */,
+				0648154800B6F26B7F000001 /* envVariables.nib in Resources */,
+				F584C892015E94BD01000001 /* runNowPanel.nib in Resources */,
+				5AEA529C03C8862500000104 /* TaskDialog.nib in Resources */,
+				089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */,
+				01108E3EFFF7F751C0A8FC05 /* cronnix_app.icns in Resources */,
+				0131485400AF26EA7F000001 /* sucrontab in Resources */,
+				152B666D00D185EB7F000001 /* delete.tiff in Resources */,
+				152B666F00D253437F000001 /* new.tiff in Resources */,
+				1339977B00D50DD47F000001 /* user.tiff in Resources */,
+				1339977D00D512A97F000001 /* save.tiff in Resources */,
+				F591D44400E50BA901000001 /* new_env.tiff in Resources */,
+				F55E28A9011B0E3101000001 /* Localizable.strings in Resources */,
+				F594C0E7024772DB01000110 /* runnow.tiff in Resources */,
+				5AEA4EC903C8588200000104 /* edit.tiff in Resources */,
+				5A8AD8CB085ADFC000B62B1F /* CronniX Help in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		043355C9FE30361CC02AAC07 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECDC8E024CC0250100011A /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29B9732BFDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B9732CFDCFA39411CA2CEA /* main.m in Sources */,
+				015991F6FFF0D958865D81D7 /* loadCrontabController.m in Sources */,
+				07DAD5A8009712FC7F000001 /* BLAuthentication.m in Sources */,
+				0648154C00B6F30D7F000001 /* envVariablesNibController.m in Sources */,
+				013612D900D39F457F000001 /* UserImageRep.m in Sources */,
+				013612DD00D3AC8D7F000001 /* Toolbar.m in Sources */,
+				0EE2ED5200D422B17F000001 /* UserImageView.m in Sources */,
+				F5420F060153960D01A8FC02 /* SwitchFormatter.m in Sources */,
+				F584C896015E96A601000001 /* RunNowNibController.m in Sources */,
+				F50206F10178B63F01BF658F /* crController.m in Sources */,
+				F53AE209019C04BF01000102 /* MyTableView.m in Sources */,
+				F53D5B7301DFA9C201000103 /* NewTaskDialogController.m in Sources */,
+				F53D5B7D01E0800001000103 /* TaskObject.m in Sources */,
+				F5AC0A5801F5BBE801000133 /* Crontab.m in Sources */,
+				5A9817D803C741FF00000104 /* SasString.m in Sources */,
+				5AEA529903C87DD600000104 /* TaskDialogController.m in Sources */,
+				5AEA52A003C886CB00000104 /* EditTaskDialogController.m in Sources */,
+				5A72890206074BD700305534 /* EnvVariable.m in Sources */,
+				5A7289500607582A00305534 /* CommentLine.m in Sources */,
+				5AC77FF40624869D004BBB50 /* CrInfoCommentLine.m in Sources */,
+				5A66292D062AAA3500D9243C /* SimpleLine.m in Sources */,
+				5A662933062AAA5300D9243C /* UnparsedLine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ECDC8C024CC0250100011A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ECDC95024CC1100100011A /* test_main.m in Sources */,
+				F5ECDC99024CC1950100011A /* AllTests.m in Sources */,
+				F5ECDCAB024CD5680100011A /* CrontabTest.m in Sources */,
+				F5ECDCAD024CDCFB0100011A /* Crontab.m in Sources */,
+				F5ECDCAF024CDD240100011A /* TaskObject.m in Sources */,
+				F5ECDCB4024D3D920100011A /* TaskObjectTest.m in Sources */,
+				F5ECDCB7024D4AB70100011A /* crController.m in Sources */,
+				F5ECDCBD024D4F370100011A /* BLAuthentication.m in Sources */,
+				F5ECDCC0024D4F610100011A /* SwitchFormatter.m in Sources */,
+				F5ECDCC2024D4F6E0100011A /* Toolbar.m in Sources */,
+				F5ECDCC4024D4F7A0100011A /* NewTaskDialogController.m in Sources */,
+				F5ECDCC8024D4F970100011A /* loadCrontabController.m in Sources */,
+				F5ECDCCA024D4FAA0100011A /* UserImageView.m in Sources */,
+				F5ECDCCC024D4FB60100011A /* RunNowNibController.m in Sources */,
+				5ABC66DD03D46CCA00000104 /* TaskDialogController.m in Sources */,
+				5ABC66DF03D46CCB00000104 /* EditTaskDialogController.m in Sources */,
+				5AD2E94503DB840F00000104 /* crControllerTest.m in Sources */,
+				5A5CA76C03DC238000000104 /* MockEnvVariablesNibController.m in Sources */,
+				5A72890406074BD700305534 /* EnvVariable.m in Sources */,
+				5A7289520607582A00305534 /* CommentLine.m in Sources */,
+				5A728AB906075FF800305534 /* SasStringTest.m in Sources */,
+				5AA0AC7006076E6500E677F6 /* SasString.m in Sources */,
+				5A18076A061317760053BB44 /* EnvVariableTest.m in Sources */,
+				5AC77FF20624869D004BBB50 /* CrInfoCommentLine.m in Sources */,
+				5A66292B062AAA3500D9243C /* SimpleLine.m in Sources */,
+				5A662931062AAA5300D9243C /* UnparsedLine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXToolTarget section */
+		F5ECDC8A024CC0250100011A /* CronniXTest */ = {
+			isa = PBXToolTarget;
+			buildConfigurationList = 5A1349030857416700909BFC /* Build configuration list for PBXToolTarget "CronniXTest" */;
+			buildPhases = (
+				F5ECDC8B024CC0250100011A /* Headers */,
+				F5ECDC8C024CC0250100011A /* Sources */,
+				F5ECDC8D024CC0250100011A /* Frameworks */,
+				F5ECDC8E024CC0250100011A /* Rez */,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "All Tests";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = CronniXTest;
+			productInstallPath = /usr/local/bin;
+			productName = "All Tests";
+			productReference = F5ECDC89024CC0250100011A /* All Tests */;
+		};
+/* End PBXToolTarget section */
+
+/* Begin PBXVariantGroup section */
+		015991F0FFF0D793865D81D7 /* LoadCrontabWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				015991F1FFF0D793865D81D7 /* English */,
+				F56A0A370126B3C101000001 /* German */,
+				F584C88C015E2F1601000001 /* French */,
+				F53AE20E019C524D01000102 /* Japanese */,
+				5A1B75AC03C5D5E400000104 /* Italian */,
+				5A28880F04763B5300000104 /* Swedish */,
+				5A5544F807149E7400C3864D /* Dutch */,
+				5A5545650714A01F00C3864D /* Portuguese */,
+				5A5545660714A02400C3864D /* Spanish */,
+				5A5545670714A02800C3864D /* Welsh */,
+				5A8AD563085AD3F600B62B1F /* Danish */,
+				5A8AD583085AD5A000B62B1F /* Catalan */,
+			);
+			name = LoadCrontabWindow.nib;
+			sourceTree = "<group>";
+		};
+		0648154600B6F26B7F000001 /* envVariables.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0648154700B6F26B7F000001 /* English */,
+				F56A0A3A0126B68B01000001 /* German */,
+				F584C88E015E2F1601000001 /* French */,
+				F53AE210019C524D01000102 /* Japanese */,
+				5A1B75AD03C5D60700000104 /* Italian */,
+				5A28880E04763B4200000104 /* Swedish */,
+				5A5544F907149E8500C3864D /* Dutch */,
+				5A55456207149FFB00C3864D /* Portuguese */,
+				5A5545630714A00200C3864D /* Spanish */,
+				5A5545640714A00B00C3864D /* Welsh */,
+				5A8AD560085AD3D200B62B1F /* Danish */,
+				5A8AD580085AD59400B62B1F /* Catalan */,
+			);
+			name = envVariables.nib;
+			sourceTree = "<group>";
+		};
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+				5A5544E407149E5A00C3864D /* Dutch */,
+				F584C88B015E2F1601000001 /* French */,
+				F56A0A380126B68B01000001 /* German */,
+				5A1B75AB03C5D54C00000104 /* Italian */,
+				F53AE20D019C524D01000102 /* Japanese */,
+				5A28881004763B5C00000104 /* Swedish */,
+				5A5545680714A03A00C3864D /* Portuguese */,
+				5A5545690714A04500C3864D /* Spanish */,
+				5A55456A0714A04A00C3864D /* Welsh */,
+				5A8AD569085AD41100B62B1F /* Danish */,
+				5A8AD589085AD5DA00B62B1F /* Catalan */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		5A8AD8B7085ADFC000B62B1F /* CronniX Help */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A8AD8B8085ADFC000B62B1F /* English */,
+				5A8AD8CE085ADFC900B62B1F /* Dutch */,
+				5A8AD8F3085ADFCE00B62B1F /* Japanese */,
+			);
+			name = "CronniX Help";
+			sourceTree = "<group>";
+		};
+		5AEA529A03C8862500000104 /* TaskDialog.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AEA529B03C8862500000104 /* English */,
+				5A8B53AC041E060B00000104 /* German */,
+				5A8B53AE041E06EC00000104 /* Italian */,
+				5A8B53AD041E06E000000104 /* Japanese */,
+				5A28881204763B6E00000104 /* Swedish */,
+				5A5544FB07149EA300C3864D /* Dutch */,
+				5A55450F07149ED800C3864D /* French */,
+				5A55452307149EF600C3864D /* Portuguese */,
+				5A55453707149F1600C3864D /* Welsh */,
+				5A55454B07149F3600C3864D /* Spanish */,
+				5A8AD56F085AD42F00B62B1F /* Danish */,
+				5A8AD58F085AD5F100B62B1F /* Catalan */,
+			);
+			name = TaskDialog.nib;
+			sourceTree = "<group>";
+		};
+		F55E28A7011B0E3101000001 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F55E28A8011B0E3101000001 /* English */,
+				5A0619C207183E270032DBB1 /* Dutch */,
+				F584C88F015E2F2D01000001 /* French */,
+				F5D9AF00011B36A201000001 /* German */,
+				5A1B75B803C5D8AF00000104 /* Italian */,
+				F53AE211019C524D01000102 /* Japanese */,
+				5A28881304763B7700000104 /* Swedish */,
+				5A0619C307183E4A0032DBB1 /* Portuguese */,
+				5A0619C407183E520032DBB1 /* Spanish */,
+				5A0619C507183E570032DBB1 /* Welsh */,
+				5A8AD566085AD40300B62B1F /* Danish */,
+				5A8AD586085AD5D000B62B1F /* Catalan */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F584C890015E94BD01000001 /* runNowPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F584C891015E94BD01000001 /* English */,
+				F53AE212019C524D01000102 /* Japanese */,
+				5A1B75AE03C5D6D300000104 /* French */,
+				5A1B75AF03C5D6DE00000104 /* German */,
+				5A1B75B003C5D6E900000104 /* Italian */,
+				5A28881104763B6400000104 /* Swedish */,
+				5A5544FA07149E9500C3864D /* Dutch */,
+				5A55455F07149FC800C3864D /* Welsh */,
+				5A55456007149FD300C3864D /* Spanish */,
+				5A55456107149FE800C3864D /* Portuguese */,
+				5A8AD56C085AD42000B62B1F /* Danish */,
+				5A8AD58C085AD5E700B62B1F /* Catalan */,
+			);
+			name = runNowPanel.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A1349000857416600909BFC /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = CronniX;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		5A1349010857416600909BFC /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = CronniX;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		5A1349020857416600909BFC /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = CronniX;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		5A1349040857416700909BFC /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "All Tests";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		5A1349050857416700909BFC /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "All Tests";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		5A1349060857416700909BFC /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "All Tests";
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		5A1349080857416700909BFC /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		5A1349090857416700909BFC /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		5A13490A0857416700909BFC /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A1348FF0857416600909BFC /* Build configuration list for PBXApplicationTarget "CronniX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A1349000857416600909BFC /* Development */,
+				5A1349010857416600909BFC /* Deployment */,
+				5A1349020857416600909BFC /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		5A1349030857416700909BFC /* Build configuration list for PBXToolTarget "CronniXTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A1349040857416700909BFC /* Development */,
+				5A1349050857416700909BFC /* Deployment */,
+				5A1349060857416700909BFC /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		5A1349070857416700909BFC /* Build configuration list for PBXProject "CronniX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A1349080857416700909BFC /* Development */,
+				5A1349090857416700909BFC /* Deployment */,
+				5A13490A0857416700909BFC /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

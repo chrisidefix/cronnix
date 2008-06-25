@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/P
+ropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>Product</key>
+        <string>CronniX</string>
+		<key>Version</key>
+		<string>3.0</string>
+		<key>Changes</key>
+		<array>
+      <string>Japanese localization including Help by Yuzuru Shiraiwa</string>
+      <string>Catalan localization by Xavier Blanquer</string>
+      <string>Danish localization by Sebastian Adorján Dyhr</string>
+		</array>
+</dict>
+</plist>
