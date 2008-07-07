@@ -719,6 +719,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 5A1349070857416700909BFC /* Build configuration list for PBXProject "CronniX" */;
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -736,6 +737,7 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CronniX objc */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				5A9E54060A47C1850068486F /* CronniX */,
 				5A9E54520A47C1850068486F /* CronniXTest (Upgraded) */,

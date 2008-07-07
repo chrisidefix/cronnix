@@ -1,0 +1,52 @@
+<HTML>
+<head>
+<title>Éléments des menus</title>
+</head>
+<body>
+
+<h2>Éléments des menus</h2>
+
+<p>Ce qui suit décrit les divers éléments des menus. Seulement les éléments de menus non standard et probablement non évident sont expliqués.
+
+<h3>Fichier</h3>
+
+<p><b>Nouvelle tâche (Cmd-N)</b> Ajoute une nouvelle entrée. Ceci fonctionnera pour la fenêtre principale de crontab ou la fenêtre Variables d'environnement,
+selon laquelle est à l'avant-plan. Dans le cas de la fenêtre crontab, une nouvelle tâche par défaut sera ajoutée; pour la fenêtre Variables d'environnement, une nouvelle entrée de variables d'environnement par défaut sera ajoutée.</p>
+
+<p><b>Nouvelle tâche par défaut (Opt-Cmd-N)</b> Créé  une nouvelle tâche par défaut dans ce crontab. Ceci sautera le dialogue et ajoutera simplement une nouvelle tâche par défaut au crontab. (J'ajouterai des préférences bientôt, de sorte que des tâches par défaut puissent être personnalisées.)
+
+<p><b>Ouvrir pour l'utilisateur (Cmd-O)</b> Ouvre le crontab d'un autre utilisateur. Vous devrez vous authentifier à moins que vous saisissiez votre nom actuel d'utilisateur.</p>
+
+<p><b>Ouvrir le Crontab du système</b> En plus de tous les crontabs d'utilisateur (y compris l'utilisateur <i>root</i>) il y a un crontab de système (enregistré sous
+/etc/crontab). Vous pouvez l'éditer en choisissant cette commande de menu ou en ouvrant pour l'utilisateur "système". Actuellement, vous n'aurez pas besoin de vous authentifier pour afficher le crontab de système, mais la sauvegarde de toutes modifications exigera l'authentification.</p>
+
+<p><b>Enregistrer</b> Enregistre les modifications au crontab actuel. Ceci installera le crontab et rendra ses programmations actives.
+
+<p><b>Import</b> Importer un fichier crontab. Voir <a href="general_usage.html#import_export" target="_right">importer/exporter</a> pour plus d'informations.
+
+<p><b>Exporter</b> Exportez le crontab actuel vers un fichier. Voir <a href="general_usage.html#import_export" target="_right">importer/exporter</a> pour plus d'informations.
+
+<h3>Édition</h3>
+
+<p><b>Modifier la tâche... (Cmd-M)</b> La tâche actuellement choisie s'ouvrira dans <a href="edit_task_dialog.html"> le dialogue 'Modifier la tâche'</a>.
+
+<p><b>Variables d'environnement (Cmd-E)</b> Une fenêtre pour modifier les variables d'environnement de votre crontab s'ouvrira (voir la capture d'écran ci-dessous). Puisque les tâches qui sont démarrées par le daemon cron ne fonctionneront pas dans le même environnement que votre interpréteur de commandes interactif habituel, vous pouvez fournir des variables d'environnement dans votre crontab. Dans la fenêtre Variable d'environnement, vous pouvez écrire un environnement variable et sa valeur.</p>
+
+<h3>Tâche</h3>
+
+<p><b>Exécuter maintenant (Cmd-Opt-R)</b> Exécute la tâche choisie immédiatement. La commande sera exécutée dans un interpréteur de commandes interactif (tcsh) et sa sortie sera affichée dans une fenêtre. Plus d'information sur la <a href="general_usage.html#run_now" target="_right"> commande Utilisation générale / "Exécuter maintenant" </a>.
+
+<p><b>Insérer le programme (Cmd-I)</b> Vous pouvez choisir une programmation ou un script qui sera ajouté à votre crontab sur une nouvelle ligne. La chaîne de
+caractères &quot;/usr/bin/open&quot ; sera ajoutée au début. C'est équivalent au comportement glisser-déposer. Plus d'information sur <a href="general_usage.html#drag_and_drop" target="_right">Utilisation générale / Glisser-déposer</a>.
+
+<h3> Édition </h3>
+
+<p><b>Aide CronniX</b> Bien, vous l'avez trouvé.
+
+<p><b>Rechercher une mise à jour</b> Si vous avez une connexion active à Internet vous pouvez vérifier s'il y a une nouvelle version de CronniX disponible. Aucune donnée de votre machine ne sera envoyée. Tout ce que ceci fait est d'aller chercher un fichier 'version.xml ' de la page d'accueil CronniX et de contrôler sa révision contre votre version de CronniX. S'il y a une mise à jour disponible, une feuille affichera les modifications et vous demandera si vous voulez vous connecter à la page d'accueil de CronniX avec votre navigateur par défaut.
+
+<hr>
+<a href="welcome.html" target=_right> Départ </a>
+
+</BODY>
+</HTML>

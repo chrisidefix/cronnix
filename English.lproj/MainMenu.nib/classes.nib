@@ -1,52 +1,110 @@
-{
-    IBClasses = (
-        {
-            ACTIONS = {newLineWithDialog = id; }; 
-            CLASS = FirstResponder; 
-            LANGUAGE = ObjC; 
-            SUPERCLASS = NSObject; 
-        }, 
-        {CLASS = MyTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
-        {
-            ACTIONS = {
-                checkForUpdates = id; 
-                customizeToolbar = id; 
-                duplicateLine = id; 
-                editSelectedTask = id; 
-                envVariables = id; 
-                exportCrontab = id; 
-                importCrontab = id; 
-                insertProgram = id; 
-                loadCrontab = id; 
-                newLine = id; 
-                newLineWithDialog = id; 
-                openForUser = id; 
-                openHomepage = id; 
-                openSystemCrontab = id; 
-                removeLine = id; 
-                runSelectedCommand = id; 
-                showInfoPanel = id; 
-                showhideToolbar = id; 
-                writeCrontab = id; 
-            }; 
-            CLASS = crController; 
-            LANGUAGE = ObjC; 
-            OUTLETS = {
-                commandColumn = id; 
-                contextMenu = id; 
-                crTable = id; 
-                deleteMenuItem = id; 
-                duplicateMenuItem = id; 
-                editTaskMenuItem = id; 
-                infoTextField = id; 
-                mSave = id; 
-                runNowMenuItem = id; 
-                showHideMenuItem = id; 
-                userColumn = id; 
-                winMain = id; 
-            }; 
-            SUPERCLASS = NSObject; 
-        }
-    ); 
-    IBVersion = 1; 
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>CLASS</key>
+			<string>MyTableView</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSTableView</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>newLineWithDialog</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>checkForUpdates</key>
+				<string>id</string>
+				<key>customizeToolbar</key>
+				<string>id</string>
+				<key>duplicateLine</key>
+				<string>id</string>
+				<key>editSelectedTask</key>
+				<string>id</string>
+				<key>envVariables</key>
+				<string>id</string>
+				<key>exportCrontab</key>
+				<string>id</string>
+				<key>importCrontab</key>
+				<string>id</string>
+				<key>insertProgram</key>
+				<string>id</string>
+				<key>loadCrontab</key>
+				<string>id</string>
+				<key>newLine</key>
+				<string>id</string>
+				<key>newLineWithDialog</key>
+				<string>id</string>
+				<key>openForUser</key>
+				<string>id</string>
+				<key>openHomepage</key>
+				<string>id</string>
+				<key>openSystemCrontab</key>
+				<string>id</string>
+				<key>removeLine</key>
+				<string>id</string>
+				<key>runSelectedCommand</key>
+				<string>id</string>
+				<key>showInfoPanel</key>
+				<string>id</string>
+				<key>showhideToolbar</key>
+				<string>id</string>
+				<key>writeCrontab</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>crController</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>commandColumn</key>
+				<string>id</string>
+				<key>contextMenu</key>
+				<string>id</string>
+				<key>crTable</key>
+				<string>id</string>
+				<key>deleteMenuItem</key>
+				<string>id</string>
+				<key>draggedObjects</key>
+				<string>id</string>
+				<key>duplicateMenuItem</key>
+				<string>id</string>
+				<key>editTaskMenuItem</key>
+				<string>id</string>
+				<key>infoTextField</key>
+				<string>id</string>
+				<key>mSave</key>
+				<string>id</string>
+				<key>runNowMenuItem</key>
+				<string>id</string>
+				<key>showHideMenuItem</key>
+				<string>id</string>
+				<key>userColumn</key>
+				<string>id</string>
+				<key>winMain</key>
+				<string>id</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

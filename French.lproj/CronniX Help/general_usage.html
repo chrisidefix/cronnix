@@ -1,0 +1,125 @@
+<HTML>
+<head>
+<title> Utilisation générale </title>
+</head>
+<body>
+
+<h2>Utilisation générale </h2>
+
+<p>Le programmateur "cron" du système est un programme Unix qui est automatiquement lancé au démarrage du système. Chaque minute, il contrôle les prétendus "crontabs" pour des tâches qui devraient être exécutées. Chaque utilisateur d'un système et le système lui-même peut avoir <b>un</b > crontab. CronniX vous permet de modifier tous ces crontabs un par un.</p>
+
+<p>Allons voir l'interface utilisateur CronniX :</p>
+
+<a href="screenshot.html" target="_right"><IMG SRC=screenshot2.jpg ALT=screenshot></a>
+
+<h3>Fenêtre principale</h3>
+
+<p>La fenêtre avant est la fenêtre principale de CronniX. Elle affiche ligne par la ligne que toutes les tâches que comportent ce crontab. L'icône d'état dans la barre d'outils affiche le crontab de la personne qui est modifié. Si la barre d'outils est masquée, le nom apparaîtra dans la barre de titre de la fenêtre. Le crontab de l'utilisateur actuel est lu et affiché au démarrage.</p>
+
+<p>La barre d'outils est personnalisable avec le jeu par défaut contenant tous les éléments. Ils sont : Nouveau, Supprimer, Ouvrir, Enregistrer, État, et Édition. Sauf pour l'icône d'état, toutes les icônes de la barre d'outils ont des éléments de menu
+correspondants. Voici ce qu'elles font :</p>
+
+<table>
+
+<tr><td width=150 valign=top>
+<b>Nouvelle tâche (Cmd-N)</b></td>
+<td>Créé une nouvelle entrée (tâche) dans ce crontab à l'aide du dialogue de création/modification.</td></tr>
+
+<tr><td valign=top>
+<b>Supprimer</b></td> <td> Disponible seulement si une entrée est choisie. Efface l'entrée actuelle choisie.</td></tr>
+
+<tr><td valign=top>
+<b>Ouvrir (Cmd-O)</b></td> 
+<td>Ouvre un crontab différent. Vous devrez vous authentifier pour ouvrir les crontabs d'autres utilisateurs. Le crontab du système peut être ouvert (mais, ne pas être sauvegardé) sans authentification.</td></tr>
+
+<tr><td valign=top>
+<b>Enregistrer (Cmd-S)</b></td>
+<td> Enregistre le crontab actuel. Il sera disponible au programmateur de système immédiatement.</td></tr>
+
+<tr><td valign=top>
+<b>État</b></td> 
+<td>Affiche le propriétaire du crontab. Pour le crontab du système, il s'intitule "système".</td></tr>
+
+<tr><td valign=top>
+<b>Édition</b></td> 
+<td>Ouvre le dialogue 'Éditer les tâches' pour la tâche actuelle choisie.</td></tr>
+
+<tr><td valign=top>
+<b>Exécuter maintenant</b></td> 
+<td>Exécute la tâche actuellement choisie.</td></tr>
+
+</table>
+
+<p>Au-dessous de la barre d'outils, vous voyez la liste de tâches dans ce crontab. Les champs de crontab peuvent être édités par un double-clic. Voyez la section au sujet de la <a href="crontab_syntax.html" target="_right">Syntaxe crontab</a> pour l'information sur les zones dans une entrée/tâche crontab. La case devant chaque ligne vous permet d'activer/déactiver une tâche.</p>
+
+<p>Il y a un menu contextuel disponible pour des commandes spécifiques aux tâches. Faites un clic-droit sur une tâche pour en choisir une et pour afficher le menu.</p>
+       
+<h3>Infos sur les tâches</h3>
+
+<p>Dans la version 2.0, un champ de textes pour des commentaires sur les tâches a été ajouté au-dessous de la liste de tâches. Le séparateur entre cette zone d'information et la liste de tâches peut être glissé de haut en bas pour redimensionner la présentation. En cliquant sur une tâche, on affiche sa description (tel que saisie par l'utilisateur) dans le champ d'information. Éditez simplement le texte dans le champ d'information et il sera sauvegardé avec la tâche.
+
+<h3>Fenêtre Variables d'environnement</h3>
+
+<p>Les tâches programmées pour l'exécution par cron sont exécutées dans un environnement spécial qui ne lira pas vos scripts personnalisés de cshrc ou de session (si vous n'êtes pas le type Unix et ne savez pas ce dont je parle - ne vous inquiétez pas). Si vous devez toujours placer des variables d'environnement comme MAIL pour les scripts que vous démarrer via cron, vous devez les mettre directement dans votre crontab. Vous faites ceci en affichant la fenêtre Variables d'environnement à l'aide du menu "Édition/Variables d'environnement" ou juste en tapant Cmd-E.</p>
+
+<p>La fenêtre de variables d'environnement est très semblable à la fenêtre principale. Elle a sa propre barre d'outils avec deux boutons :</p>
+
+<table>
+<tr><td width=100 valign=top><b>Nouveau (Cmd-N)</b></td> <td>Créez une nouvelle entrée de variable d'environnement.</td></tr>
+<tr><td valign=top><b>Supprimer</b></td> <td>Disponible seulement si une entrée est choisie. Efface l'entrée actuelle choisie.</td></tr>
+</table>
+
+<p>Pour l'uniformité, je ne pouvais pas résister de faire aussi une barre d'outils personnalisable. Dans le bon vieux modèle de livre de maths : Nous laissons à l'utilisateur la quantité de façons dont on peut réarranger deux boutons.
+
+<h3>Ouverture des crontabs d'autres utilisateurs</h3>
+
+<p>Vous pouvez éditer les crontabs d'autres utilisateurs en choisissant "Ouvrir pour l'utilisateur" du menu "Fichier" (raccourci : Cmd-O). Ceci exigera l'autorisation d'administrateur (si vous écrivez un nom utilisateur autre que le vôtre ou celui du "système") et vous serez invité à entrer votre mot de passe.</p>
+
+<p>Il y a également un crontab du système qui permet la programmation de tâches du système à l'extérieur de tous les crontabs utilisateur. Ce n'est <em>pas</em> identique au crontab de la racine (root). Vous pouvez visualiser le crontab du système en choisissant "Ouvrir le Crontab du système" depuis le menu "Fichier" ou en écrivant "système" comme nom d'utilisateur en ouvrant le crontab d'un autre utilisateur. Notez que vous pouvez visualiser le crontab du système sans autorisation, mais l'enregistrement nécessite des droits administrateur. Je rendrai le visionnement non autorisé configurable à l'avenir.)</p>
+
+<h3><a name="drag_and_drop">Glisser-déposer / Insérer un programme<a></h3>
+
+<p>CronniX utilise le glisser-déposer qui, par exemple, est utile si vous avez plusieurs AppleScripts que vous voulez ajouter à votre crontab. Saisissez les fichiers dans le Finder et glissez-les sur votre crontab.
+
+<p>Si vous
+<ul>
+<li>déposez une sélection sur un champ en blanc, les éléments choisis peupleront les nouvelles tâches crontab
+<li> déposez une sélection sur une ligne existante, sa commande sera remplacée par la sélection
+<li> déposez de multiples fichiers sur une tâche, la commande de cette tâche sera remplacée avec le premier fichier et  la nouvelle tâche pour l'élément restant sera créée.</ul>
+
+<p>Les opérations de glisser-déposer affecteront seulement le champ 'Commande' d'une tâche. Nouvelle tâche sera ajouté avec le programme d'une tâche par défaut et la partie fichier dans le champ 'Commande '.
+
+<p>Des fichiers ajoutés à un crontab de cette façon seront précédés de "/usr/bin/open" automatiquement. Ceci est nécessaire pour lancer des "applications" depuis la ligne de commande. Les applications, dans ce contexte, sont des programmes qui sont habituellement lancés par l'intermédiaire de l'interface graphique, c.-à-d. par un double-clic dans le Finder. Les scripts shell ne devraient pas avoir ce préfixe, mais on n'assume pas qu'ils sont glissés-déposés. (Ce sera configurable à l'avenir.)</p>
+
+<p>Vous pouvez enlever facilement le "préfixe" "/usr/bin/open" en ouvrant le dialogue de modification de tâches et décochez la case 'Précéder de \"/usr/bin/open\". </p>
+
+<p>Vous pouvez également glisser-déposer des sélections de textes. Celles-ci remplaceront la commande si déposées sur une ligne ou créée une nouvelle tâche avec le texte tel une commande si relâchée sur un champ vide.</p>
+
+<p>L'équivalent de la barre de menu à la fonctionnalité de glisser-déposer pour des fichiers est "Insérer un programme" dans le menu  "Édition" (raccourci Cmd-I). Un dialogue standard de fichier apparaitra permettant à la sélection d'un ou plusieurs fichiers (employez  la touche Majus. ou Cmd pour étendre la sélection) à ajouter.</p>
+
+<h3><a name="run_now">Commande "Exécuter maintenant"</a></h3>
+
+<p>Si vous ne voulez pas rester debout toute la nuit pour voir votre script s'exécuter à 3 h du matin, il y a une fonctionnalité qui vous permet d'exécuter une commande immédiatement. La commande sera exécutée dans un interpréteur de commandes interactif (tcsh) et sa sortie sera affichée dans une fenêtre.</p>
+
+<p>Notez que quoique ceci pourrait être utile pour des tests, l'environnement de tcsh n'est pas identique au démon de cron. À quelques occasions, votre tcsh pourrait avoir un programme dans son chemin d'accès, par exemple, alors que le démon cron ne peut pas la trouver. D'autre part, si une commande fonctionne dans l'environnement cron vous ne devriez pas avoir des problèmes en utilisant la commande "Exécuter maintenant".</p>
+
+<p>Cela vaut seulement pour les tâches fonctionnant dans votre propre crontab. Actuellement, la commande "Exécuter maintenant" n'emploie pas sudo pour exécuter une tâche pour l'utilisateur dont vous éditez le crontab. Ainsi, si vous visualisez le crontab du système, l'utilisation de la commande "Exécuter maintenant" ne fera pas beaucoup de bien; à moins que vous exécutiez CronniX en tant que 'racine' (root) vous n'aurez pas la permission d'exécuter les scripts d'entretien par exemple. (En fait, pour être techniquement correct, vous pouvez exécuter les scripts, mais pour ce qui est à l'intérieur d'eux fait des choses qu'un utilisateur régulier n'a pas l'autorisation de faire, de sorte, qu'exécuter le contenu des scripts d'entretien échoue.)
+
+<p>L'amélioration de la fonction "Exécuter maintenant" est dans le haut de ma liste de choses à faire.
+
+<h3><a name="import_export">Importer et Exporter des crontabs</h3>
+
+<p>Version 2.1 a apporté l'importation et l'exportation des crontabs. Vous pouvez trouver les éléments de menu correspondants dans le menu Fichier. CronniX sauvegardera et lira des fichiers. L'extension par défaut pour des crontabs est "crontab". Les commandes sont "sécuritaires", c.-à-d. vous serez invité à sauvegarder des modifications (si nécessaire) avant d'importer un crontab.</p>
+
+<p>CronniX demeurera une application avec un seul document pour le moment. Par conséquent, il ne s'enregistre pas en tant que handler pour des fichiers "crontab" en ce moment, parce que CronniX ne pourra pas afficher une autre fenêtre de crontab, mais remplacerait plutôt votre crontab actuel avec le fichier. Faire de CronniX une demande multidocuments signifierait plus de travail que je peux faire actuellement.</p>
+
+<p>Veuillez noter qu'après l'importation/exportation, le crontab modifié demeure dans son contexte initial, ce qui signifie qu'il sera encore associé à votre crontab utilisateur, au crontab du système, etc. Ce n'est pas une représentation du fichier que vous avez chargé/enregistré, mais plutôt le nouveau contenu du crontab que vous modifiez précédemment. Les modifications ne sont pas validées jusqu'à ce que vous sauvegardiez (installez) le crontab une autre fois.</p>
+
+<p>La prochaine demande de fonctionnalité sera d'ajouter des crontabs à partir
+ds fichiers, je pense... Considérez-la prévue.</p>
+
+<hr>
+<a href="welcome.html" target=_right> Départ </a>
+
+</BODY>
+</HTML>

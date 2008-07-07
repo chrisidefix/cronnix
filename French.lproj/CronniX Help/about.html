@@ -1,0 +1,133 @@
+<HTML>
+<head>
+<title>Licence</title>
+</head>
+<body>
+
+<h2>Licence</h2>
+
+<p>Cette chose est complètement gratuite. Cela dit, je ne suis pas responsable de ce que ce programme pourrait faire à votre ordinateur.
+
+<h2>Contact</h2>
+
+<p>Je suis toujours reconnaissant pour les commentaires au sujet de ce projet.
+Suggestions, plaintes, ou quoi que ce soit. Voici mon adresse : <a href="mailto:sas@abstracture.de">sas@abstracture.de</a>
+
+
+<h2>Distribution de CronniX</h2>
+
+<p>N'hésitez pas à me contacter si vous voulez inclure CronniX sur un CD-ROM ou d'autres médias de distribution. Même si CronniX est gratuit pour la redistribution, je serais intéressé où et comment elle est distribuée.
+
+<p>Si vous écrivez au sujet de CronniX ou le mentionnez dans un article, n'hésitez pas à me le demander si vous avez des questions ou voulez seulement m'en informer.
+
+<h2>Historiques des versions</h2>
+
+    <p><i>3.0 - June 11, 2005</i><p>
+    <ul>
+    <li>Japanese localization including Help by Yuzuru Shiraiwa</li>
+    <li>Catalan localization by Xavier Blanquer</li>
+    <li>Danish localization by Sebastian Adorj·n Dyhr</li>
+    </ul>
+    <p>Thanks a lot for these translations, CronniX now comes in twelve languages!</p>
+
+		<i>3.0b3 - October 25, 2004</i>
+    <ul>
+      <li>Fixed parsing bug: User column of system crontab was ignored</li>
+      <li>Fixed parsing bug: '=' sign in command string caused tasks to be read in a environment variables</li>
+      <li>Fixed display issue: Info text field was not updated after deletes</li>
+    </ul>
+
+		<i>3.0b2 - October 10, 2004</i>
+    <ul>
+    <li>Fixed column resizing in the English version</li>
+    <li>Updated Japanese localization (thanks to Yuzuru Shiraiwa for the update)</li>
+    <li>Updated French localization (thanks to MichaÎl Ghez, Claude Tamone, Damien Bobillot for their contributions. I've included Damien's translations as it was the latest -- in order to prevent folks from independently translating CronniX please always check back with me if there's an updated localized variant that's not released yet. There have been several occasions where I had to choose between translations and believe me there's little justice I can do your fine work with most of the languages you translate CronniX to :))
+    <li>Included all remaining localizations
+    </ul>
+
+		<i>3.0b1 - October 6, 2004</i>
+		<ul>
+			<li>New crontab parsing: preserving unknown/unparsable content</li>
+			<li>Drag and drop of tasks and environment variables (within CronniX and cross applications)</li>
+		</ul>
+
+
+<i>2.0 - January 18, 2003</i>
+<ul>
+<li>Improved, dialog based task creation
+<li>Task comments
+<li>Column reordering (with saved state)
+<li>Online update check (manual)
+<li>Bug fix: startup crash on broken crontab
+<li>Improved help
+<li>Internally restructured data model to prepare for MDI
+</ul>
+
+<i>1.5.1 - September 27, 2002</i>
+<ul>
+<li>Fixed Help bug in Jaguar: Help is displayed now.
+</ul>
+
+<i>1.5 - November 11, 2001</i>
+<ul>
+    <li> "Run now" command allows you to execute a task immediately
+    <li> Check box to activate/deactivate tasks
+    <li> Delete shortcut
+    <li> Context menus for tasks
+    <li> Multi selection for deletion/duplication
+    <li> French Localization (thanks to Sylvain Cuaz!)
+    <li> Japanese Localization (thanks to E-Wa)
+</ul>
+
+<i>1.4.1 - September 9, 2001</i>
+<ul>
+    <li>A new icon. Finally! Thanks to Forrest Walter.
+    <li>Fixed the version strings.
+    <li>Fixed a couple of typos in the docs.
+    <li>Added German localization. Please contact me if you want to localize CronniX.
+    <li>Fixed a bug that writes the system crontab to "/>" in addition to "/etc/crontab". The unix guys will know what happened - I refuse to comment ;-)
+</ul>
+
+<i>1.4 - August 2, 2001</i>
+<ul>
+    <li>Added quotation marks for inserted programs with whitespace in their name.
+    <li>Added support for system crontab.
+    <li>Fixed problem when trying to open another user's non-exsiting crontab.
+    <li>Added toolbars.
+    <li>Additional menu items.
+    <li>Documentation update.
+</ul>
+
+<i>1.3 - June 3, 2001</i>
+<ul>
+    <li>Fixed a bug that caused CronniX too complain when there's no crontab (opening for different user only)
+    <li>Improved &quot;Open For User&quot; such that users other than &quot;root&quot; can open other user's crontabs (after authorizing).
+    <li>Added support for environment variables.
+</ul>
+
+<i>1.2 - March 27, 2001</i>
+<ul>
+    <li>Fixed a bug that prevented rereading of a crontab if CronniX is restarted too fast.
+    <li>Added &quot;Insert pogram&quot; menu item to complement the drag and drop feature. You can now also select a program/script (actually any file) to be inserted as a command.
+    <li>Minor interface changes, e.g. changed button label from &quot;Write&quot; to &quot;Save&quot;, added a &quot;Save&quot; menu item with shortcut.
+    <li>And yes, CronniX runs on OSX 10.0 (final, retail, GM, 4k78 or whatever you prefer to call it ;-)
+</ul>
+
+<I>1.1 - December 26, 2000</I>
+<ul>
+    <li>Drag and drop support. As suggested by a user, CronniX now features drag and drop. Upon dropping a text selection on a line, it is inserted as a command in the command field. If you drop a file its name is inserted along with a prepended &quot;open&quot;. This can be used to insert AppleScripts. If the drop is not on a line but rather the table view, a new line is inserted.
+    <li>Open for different user. The file menu item &quot;Open For User&quot; will open a dialog that allows you to open another user's crontab. Note that you have to be super user (&quot;root&quot;) to be able to do this. Crontab (the underlying unix tool) will deny access to other user's crontabs for any user but the super user.
+    <li>Online help.
+    <li>Rewritten in Objective C. This makes CronniX start up faster and use less memory than the Java version.
+</ul>
+
+<I>1.0 - December 7, 2000</I>
+<ul>
+    <li>Initial release (Java version)
+</ul>
+
+<hr>
+<a href="welcome.html" target=_right>Départ</a>
+
+</BODY>
+</HTML>

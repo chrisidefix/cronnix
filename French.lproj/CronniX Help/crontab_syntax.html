@@ -1,0 +1,71 @@
+<HTML>
+<head>
+<title>Syntaxe Crontab</title>
+</head>
+<body>
+
+<h2>Syntaxe Crontab</h2>
+
+<p>Une tâche crontab se compose de quatre champs de date/heure et d'un champ de commande. À toutes les minutes, <em>cron</em> examine tous les crontabs pour vérifier s'il y a une correspondance entre la date/heure actuelle et leurs tâches. S'il y a une correspondance, on exécute la commande. Le crontab du système a un champ "utilisateur" supplémentaire qui indique à cron quel identifiant d'utilisateur on devrait exécuter la commande.</p>
+
+<p>Les champs sont :</p>
+<TABLE>
+    <TR>
+        <TD width=80 valign=top>Min</TD>
+        <TD>minute de l'exécution, 0-59</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Heure</TD>
+        <TD>heure de l'exécution, 0-23</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Mjour</TD>
+        <TD>jour du mois de l'exécution, 1-31</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Mois</TD>
+        <TD>mois de l'exécution, 1-12 (ou les noms)</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Jsem</TD>
+        <TD>jour de la semaine de l'exécution, 0-7 (0 ou 7 est dimanche, ou les noms)</TD>
+    </TR>
+    <TR>
+        <TD valign=top>Commande</TD>
+        <TD>Tout ce qui peut être lancé à partir de la ligne de commande</TD>
+    </TR>
+</TABLE>
+<P></P>Valeurs possibles :<BR>
+<TABLE>
+    <TR>
+        <TD width=40 valign=top>*</TD>
+        <TD>correspond à toutes les valeurs, p. ex. : un * dans mois signifie :
+&quot;chaque mois&quot;</TD>
+    </TR>
+    <TR>
+        <TD valign=top>x-y</TD>
+        <TD>correspond à l'intervalle x à y, p. ex. :  2-4 dans Jmois signifie &quot;sur le 2e, 3e, et 4e du mois&quot;</TD>
+    </TR>
+    <TR>
+        <TD valign=top>x/n</TD>
+        <TD>dans l'intervalle x avec la fréquence n, p. ex. :  */2 dans Heure signifie &quot;chaque heure alterne&quot;</TD>
+    </TR>
+</TABLE>
+
+<P>Le mois accepte également les noms, p. ex. :  jan., Fév. (insensible à la casse). Ceci ne supporte pas des intervalles, cependant.
+
+<p>Les jours de la semaine peuvent également être indiqués par des noms, p. ex.: dim, Lun.</P>
+
+<p>Il y a plusieurs raccourcis spéciaux de programmation que CronniX ne supporte pas en ce moment, par exemple, @yearly, @daily, etc. (voir le 'man 5 crontab' pour les détails). Tous excepté un de ces derniers est un raccourci. Par exemple, @daily égale '0 0 * * *'. La seule étiquette différente est @reboot.
+
+<p>Je ne peux confirmer si ces étiquettes (particulièrement @reboot) fonctionnent, ni si elles sont supportées par CronniX à ce moment. Je pourrais ajouter le soutien pour celles-ci à l'avenir. C'est principalement un problème sur la façon les afficher dans la présentation du tableau.
+
+<p>Je pense convertir seulement entre les raccourcis et ce qui ils représentent et utiliser la version longue en écrivant un crontab. Ceci convertira pertinemment tous les raccourcis une fois qu'ils sont analysés par CronniX. L'onglet 'Intervalles' dans le dialogue de modification (une fois qu'il est implémenté) vous permettra de choisir facilement ces programmations de toute façon, ainsi la fonctionnalité est encore disponible.
+
+<p>Le @reboot ne s'adapte pas à cet arrangement et à moins de fournir une fenêtre supplémentaire ou une présentation ou même d'étendre la présentation du tableau pour permettre un nombre de colonnes différent pour les différentes lignes pour cela, je  ne sais pas encore comment l'utiliser.
+
+<hr>
+<a href="welcome.html" target=_right>Départ</a>
+
+</BODY>
+</HTML>

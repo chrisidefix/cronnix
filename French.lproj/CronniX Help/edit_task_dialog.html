@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Dialogue Modifier une tâche</title>
+</head>
+<body>
+
+<h2>Dialogue Modifier une tâche</h2>
+
+<p>Voici une capture d'écran du nouveau dialogue de tâches :
+
+<p><IMG SRC=screenshot.jpg ALT=screenshot>
+
+<p>Quand j'ai écrit CronniX la première fois, j'ai seulement pensé qu'il serait un outil pratique pour les maniaques d'Unix qui veulent un certain genre d'interface simple ou, comme moi, quelque chose avec des en-têtes de colonnes -- chaque ligne de commande de crontab a été inévitablement accompagnée d'une consultation de la syntaxe 'man 5 crontab'.
+
+<p>Peu après avoir livré les premières versions, j'ai été contacté par des personnes qui désiraient une meilleure documentation de la syntaxe (la première version a eu une documentation comme "Tapez 'man crontab' dans Terminal" : -) et une meilleure interface pour la création/modification des tâches.
+
+<p>J'ai finalement trouvé le temps d'ajouter cette interface de modification des tâches dans la version 2.0. Il est non seulement utile pour des personnes passant d'OS 9 qui ne connaissent pas cron, mais également pour quelques gourous d'Unix comme qui, j'espère, ne passent pas tout leur temps dans Terminal.
+
+<h3>L'interface</h3>
+
+<p>Le nouveau dialogue a deux parties : Au dessus est la programmation, au bas la commande à être exécutée. La section de programmation a un panneau avec trois onglets : "Simple", "Intervalles", "Expert". Actuellement, seulement "Simple" et "Expert" sont implémentés.
+
+<p>L'idée est d'avoir différents onglets pour différents genres de programmes. Lorsque le dialogue est fermé, la programmation est traduite à la ligne de tâches habituelle dans la fenêtre principale. Quand une tâche est modifiée, le dialogue s'ouvrira avec ses champs préréglés la commande et la programmation des tâches. (Comme vous pouvez voir, l'information des tâches ne fait pas partie de l'arrangement de création/modification.)
+
+<h3>L'onglet "Simple" </h3>
+
+<p> L'onglet "Simple" est destiné aux tâches 'une fois/n'importe quand', c.-à-d. les tâches qui ont soit un nombre ou '*' dans leurs champs de programme. Vous pouvez saisir l'un ou l'autre dans les champs de textes ou déplacer les curseurs. Les commandes vous empêcheront de programmer des choses à 25:00 heures le 37 janvier.
+
+<p>La première colonne des coches est la colonne 'Tout', un raccourci définit le champ de texte à '*' et déplace le curseur complètement à gauche.
+
+<h3>L'onglet "Intervalles" </h3>
+
+<p>Sur cet onglet, je projette de fournir certains raccourcis, comme 'quotidien ', 'hebdomadaire ', 'à chaque n heure'. Sentez-vous libre de faire toutes les suggestions sur ce que vous trouveriez utile ici.
+
+<h3> L'onglet "Expert" </h3>
+
+<p>Cet onglet n'a rien de nouveau : C'est fondamentalement une réorganisation des champs d'édition dans la présentation des tableaux. Ils sont un peu plus grands et vous pourriez les trouver plus commodes pour modifier un programme ici. J'avais pensé à faire l'édition configurable directement dans la présentation des tableaux, tel que vous pouvez choisir de faire un double-clic sur une ligne pour ouvrir le dialogue de modification pour cette tâche au lieu de sélectionner la cellule du tableau dans le mode Édition.
+
+<h3>Modifier la propagation</h3>
+
+<p>Toutes les modifications que vous faites sur un onglet sont communiquées aux autres onglets. Leurs contrôles essayeront de refléter ces modifications si possible. Par exemple, dans la capture ci-dessus, vous pouvez voir que la zone 'Minute' a été définie à '*/2 '(chaque autre minute) sur l'onglet 'Expert'. Des trois commandes dans la ligne 'Minute' de l'onglet 'Simple', seulement le champ de textes peut afficher cette valeur. Tant le contrôle 'Tout' et le curseur ne comprennent rien à '*/2 '.
+
+<p>Ceci ne vous empêche pas d'employer les contrôles sur l'onglet 'Simple' pour modifier encore des valeurs. L'utilisation de n'importe quel contrôle synchronisera les états entre tous les contrôles qui sont associés à cet élément. La dernière modification écrira son résultat dans le champ, les autres contrôles essayeront de 'suivre' de mieux ils peuvent.
+
+<p>Oui, un Annuler/Rétablir serait bien :-). Cela viendra.
+
+<h3>La section 'Commandes' </h3>
+
+<p>La section 'Commande' est assez simple. La case 'Précéder de' bascule la présence de '/usr/bin/open' devant la commande, tandis que le bouton 'Parcourir' vous permettra de choisir un fichier à partir d'un dialogue de fichier standard.
+
+<hr>
+<a href="welcome.html" target="_right">Départ</a>
+
+</body>
+</html>
+
