@@ -1,0 +1,1 @@
+CronniX is an GUI frontend to the powerful Unix tool "cron". Cron is a Unix system service that allows scheduled execution of scripts, programs, applications - in short anything that can be started from the command line. This includes OSX applications and AppleScripts.
